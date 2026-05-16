@@ -1,0 +1,207 @@
+{
+  "bt26-r01-01": {
+    "status": "READY",
+    "name": "Friedrich Merz",
+    "localPath": "/bildertest/2026/r01/friedrich-merz.jpg",
+    "license": "unbekannt",
+    "licenseUrl": "",
+    "credit": "",
+    "photographer": "",
+    "filePageUrl": "",
+    "alreadyExisted": true
+  },
+  "bt26-r01-02": {
+    "status": "READY",
+    "name": "Lars Klingbeil",
+    "localPath": "/bildertest/2026/r01/lars-klingbeil.jpg",
+    "license": "unbekannt",
+    "licenseUrl": "",
+    "credit": "",
+    "photographer": "",
+    "filePageUrl": "",
+    "alreadyExisted": true
+  },
+  "bt26-r01-03": {
+    "status": "READY",
+    "name": "Katherina Reiche",
+    "localPath": "/bildertest/2026/r01/katherina-reiche.jpg",
+    "license": "unbekannt",
+    "licenseUrl": "",
+    "credit": "",
+    "photographer": "",
+    "filePageUrl": "",
+    "alreadyExisted": true
+  },
+  "bt26-r01-07": {
+    "status": "READY",
+    "name": "Johann Wadephul",
+    "localPath": "/bildertest/2026/r01/johann-wadephul.jpg",
+    "license": "unbekannt",
+    "licenseUrl": "",
+    "credit": "",
+    "photographer": "",
+    "filePageUrl": "",
+    "alreadyExisted": true
+  },
+  "bt26-r02-01": {
+    "status": "READY",
+    "name": "Alice Weidel",
+    "localPath": "/bildertest/2026/r02/alice-weidel.jpg",
+    "license": "unbekannt",
+    "licenseUrl": "",
+    "credit": "",
+    "photographer": "",
+    "filePageUrl": "",
+    "alreadyExisted": true
+  },
+  "bt26-r02-02": {
+    "status": "READY",
+    "name": "Tino Chrupalla",
+    "localPath": "/bildertest/2026/r02/tino-chrupalla.jpg",
+    "license": "unbekannt",
+    "licenseUrl": "",
+    "credit": "",
+    "photographer": "",
+    "filePageUrl": "",
+    "alreadyExisted": true
+  },
+  "bt26-r02-03": {
+    "status": "READY",
+    "name": "Sahra Wagenknecht",
+    "localPath": "/bildertest/2026/r02/sahra-wagenknecht.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Superbass",
+    "photographer": "Superbass",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:2025-04-29-Sahra_Wagenknecht-Maischberger-3041.jpg",
+    "alreadyExisted": false
+  },
+  "bt26-r02-04": {
+    "status": "READY",
+    "name": "Heidi Reichinnek",
+    "localPath": "/bildertest/2026/r02/heidi-reichinnek.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Sandro Halank, Wikimedia Commons",
+    "photographer": "Sandro Halank, Wikimedia Commons",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:2025-01-18_Au%C3%9Ferordentlicher_Bundesparteitag_Die_Linke_2025_in_Berlin_by_Sandro_Halank%E2%80%93197.jpg",
+    "alreadyExisted": false
+  },
+  "bt26-r02-07": {
+    "status": "READY",
+    "name": "Yoon Suk Yeol",
+    "localPath": "/bildertest/2026/r02/yoon-suk-yeol.jpg",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "credit": "대한민국 대통령실",
+    "photographer": "대한민국 대통령실",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:South_Korea_President_Yoon_Suk_Yeol_portrait_(crop).jpg",
+    "alreadyExisted": false
+  },
+  "bt26-r03-01": {
+    "status": "READY",
+    "name": "Ursula von der Leyen",
+    "localPath": "/bildertest/2026/r03/ursula-von-der-leyen.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "credit": "European People's Party",
+    "photographer": "European People's Party",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Ursula_von_der_Leyen_2024.jpg",
+    "alreadyExisted": false
+  },
+  "bt26-r03-02": {
+    "status": "READY",
+    "name": "Kaja Kallas",
+    "localPath": "/bildertest/2026/r03/kaja-kallas.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "credit": "Aurore Martignoni / European Union",
+    "photographer": "Aurore Martignoni / European Union",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Kaja_Kallas%2C_High_Representative_of_the_Union%2C_and_Vice-President_of_the_European_Commission_(3x4_cropped).jpg",
+    "alreadyExisted": false
+  },
+  "bt26-r03-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "António Costa"
+  },
+  "bt26-r03-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Roberta Metsola"
+  },
+  "bt26-r03-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Mark Rutte"
+  },
+  "bt26-r04-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Donald Trump"
+  },
+  "bt26-r04-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "J. D. Vance"
+  },
+  "bt26-r04-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Elon Musk"
+  },
+  "bt26-r04-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Cory Booker"
+  },
+  "bt26-r04-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Jerome Powell"
+  },
+  "bt26-r05-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Wolodymyr Selenskyj"
+  },
+  "bt26-r05-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Wladimir Putin"
+  },
+  "bt26-r05-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Benjamin Netanjahu"
+  },
+  "bt26-r05-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "António Guterres"
+  },
+  "bt26-r06-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Paul Kagame"
+  },
+  "bt26-r06-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "María Corina Machado"
+  },
+  "bt26-r06-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Nayib Bukele"
+  },
+  "bt26-r07-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Christine Lagarde"
+  },
+  "bt26-r07-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Jensen Huang"
+  },
+  "bt26-r07-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Sam Altman"
+  },
+  "bt26-r10-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Lula da Silva"
+  },
+  "bt26-r10-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Tedros Adhanom Ghebreyesus"
+  },
+  "bt26-r10-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Suni Williams"
+  }
+}

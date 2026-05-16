@@ -1,0 +1,207 @@
+/**
+ * BildertestCard
+ *
+ * Eine Karte für ein einzelnes Bildertest-Item.
+ * - Phase 1: Bildplatzhalter (oder echtes Bild, sobald image.status === 'READY')
+ *            + Prompt + Freitextfeld + "Auflösen"-Button
+ * - Phase 2: Aufgelöste Antwort + Kontext + Quellen + Self-Rating-Buttons
+ *
+ * V1.3 hält die UX bewusst einfach (Selbstkontrolle, keine Auto-Bewertung),
+ * weil die Antworten oft mehrteilig sind (Name + Rolle + Anlass) und ein
+ * starres Match unfair wäre.
+ */
+import { useState } from 'react';
+import type { BildertestItem } from '../types-bildertest';
+import type { BildertestSelfRating } from '../hooks/useBildertestState';
+
+interface Props {
+  item: BildertestItem;
+  index: number;
+  total: number;
+  onRate: (rating: BildertestSelfRating) => void;
+  onNext: () => void;
+  isLast: boolean;
+}
+
+const PROB_COLORS: Record<string, string> = {
+  'sehr hoch': '#10b981',
+  'hoch':       '#22c55e',
+  'mittel':     '#f59e0b',
+  'niedrig':    '#9ca3af',
+};
+
+const DIFF_COLORS: Record<string, string> = {
+  'leicht': '#10b981',
+  'mittel': '#f59e0b',
+  'schwer': '#ef4444',
+};
+
+export function BildertestCard({ item, index, total, onRate, onNext, isLast }: Props) {
+  const [revealed, setRevealed] = useState(false);
+  const [userInput, setUserInput] = useState('');
+  const [rated, setRated] = useState<BildertestSelfRating | null>(null);
+
+  const reveal = () => setRevealed(true);
+
+  const handleRate = (r: BildertestSelfRating) => {
+    setRated(r);
+    onRate(r);
+  };
+
+  const handleNext = () => {
+    // Reset for next card
+    setRevealed(false);
+    setUserInput('');
+    setRated(null);
+    onNext();
+  };
+
+  const imgReady = item.image?.status === 'READY' && item.image?.localPath;
+
+  return (
+    <div className="bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800">
+      {/* Header */}
+      <div className="px-6 pt-5 pb-3 border-b border-gray-800 flex items-center justify-between">
+        <div className="text-xs uppercase tracking-wider text-gray-400">
+          Frage {index + 1} / {total}
+        </div>
+        <div className="flex gap-2 items-center">
+          <span className="text-xs px-2 py-0.5 rounded-full"
+            style={{ background: DIFF_COLORS[item.difficulty] + '22', color: DIFF_COLORS[item.difficulty] }}>
+            {item.difficulty}
+          </span>
+          <span className="text-xs px-2 py-0.5 rounded-full"
+            style={{ background: PROB_COLORS[item.djsProbability] + '22', color: PROB_COLORS[item.djsProbability] }}>
+            P: {item.djsProbability}
+          </span>
+        </div>
+      </div>
+
+      {/* Image / Placeholder */}
+      <div className="bg-gray-950 aspect-[4/3] flex items-center justify-center relative overflow-hidden">
+        {imgReady ? (
+          <img
+            src={item.image.localPath}
+            alt={item.correctAnswer}
+            className="w-full h-full object-contain"
+          />
+        ) : (
+          <div className="text-center px-6 py-8">
+            <div className="text-6xl mb-3 opacity-30">🖼️</div>
+            <div className="text-sm text-gray-500 mb-2">Bildplatzhalter</div>
+            <div className="text-xs text-gray-600 italic">
+              Bild noch nicht lizenziert / freigegeben.<br />
+              Such-Hinweis: {item.image?.searchQueries?.[0]}
+            </div>
+          </div>
+        )}
+        {imgReady && item.image.credit && (
+          <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-[11px] text-gray-300 px-3 py-1.5">
+            Foto: {item.image.credit}
+            {item.image.licenseName && <> · {item.image.licenseName}</>}
+          </div>
+        )}
+      </div>
+
+      {/* Prompt */}
+      <div className="px-6 py-5">
+        <p className="text-lg text-gray-100 leading-relaxed font-serif">
+          {item.prompt}
+        </p>
+      </div>
+
+      {/* Input phase */}
+      {!revealed && (
+        <div className="px-6 pb-6 space-y-3">
+          <input
+            type="text"
+            value={userInput}
+            onChange={e => setUserInput(e.target.value)}
+            placeholder="Dein Tipp (Name / Rolle / Kontext)..."
+            className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-red-500"
+            onKeyDown={e => { if (e.key === 'Enter') reveal(); }}
+          />
+          <button
+            onClick={reveal}
+            className="w-full px-4 py-3 bg-red-700 hover:bg-red-600 text-white font-medium rounded-lg transition-colors"
+          >
+            Auflösen
+          </button>
+        </div>
+      )}
+
+      {/* Reveal phase */}
+      {revealed && (
+        <div className="px-6 pb-6 space-y-4">
+          {userInput && (
+            <div className="text-sm text-gray-400">
+              Dein Tipp: <span className="text-gray-200">{userInput}</span>
+            </div>
+          )}
+
+          <div className="bg-gray-800 rounded-lg p-4 border-l-4 border-amber-500">
+            <div className="text-xs uppercase tracking-wider text-amber-400 mb-1">Antwort</div>
+            <div className="text-xl font-serif text-gray-100">{item.correctAnswer}</div>
+            <div className="text-sm text-gray-400 mt-1">{item.roleOrShortLabel}</div>
+          </div>
+
+          <div className="bg-gray-800/50 rounded-lg p-4 text-sm text-gray-300 leading-relaxed">
+            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Kontext</div>
+            {item.newsContext}
+          </div>
+
+          {item.alternativePrompts?.length > 0 && (
+            <div className="text-xs text-gray-500">
+              <div className="uppercase tracking-wider mb-1">Tiefer fragen:</div>
+              <ul className="list-disc list-inside space-y-0.5">
+                {item.alternativePrompts.map((p, i) => <li key={i}>{p}</li>)}
+              </ul>
+            </div>
+          )}
+
+          {item.sources?.length > 0 && (
+            <div className="text-xs text-gray-500">
+              <div className="uppercase tracking-wider mb-1">Quellen</div>
+              <ul className="space-y-0.5">
+                {item.sources.map((s, i) => (
+                  <li key={i} className="truncate">
+                    <a href={s} target="_blank" rel="noreferrer" className="text-blue-400 hover:underline">
+                      {s}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Self-rating */}
+          {!rated && (
+            <div className="grid grid-cols-3 gap-2 pt-2">
+              <button onClick={() => handleRate('nicht')}
+                className="px-3 py-2.5 bg-gray-800 hover:bg-red-900/40 border border-gray-700 hover:border-red-600 rounded-lg text-sm text-gray-200">
+                Nicht gewusst
+              </button>
+              <button onClick={() => handleRate('halb')}
+                className="px-3 py-2.5 bg-gray-800 hover:bg-amber-900/40 border border-gray-700 hover:border-amber-600 rounded-lg text-sm text-gray-200">
+                Halb
+              </button>
+              <button onClick={() => handleRate('gewusst')}
+                className="px-3 py-2.5 bg-gray-800 hover:bg-emerald-900/40 border border-gray-700 hover:border-emerald-600 rounded-lg text-sm text-gray-200">
+                Gewusst
+              </button>
+            </div>
+          )}
+
+          {rated && (
+            <button
+              onClick={handleNext}
+              className="w-full px-4 py-3 bg-emerald-700 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors"
+            >
+              {isLast ? 'Runde abschließen' : 'Nächste Frage →'}
+            </button>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}

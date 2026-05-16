@@ -1,0 +1,128 @@
+import { useState } from 'react';
+import { useGameState } from './hooks/useGameState';
+import Dashboard from './pages/Dashboard';
+import QuizMode from './pages/QuizMode';
+import LearningMode from './pages/LearningMode';
+import Statistics from './pages/Statistics';
+import Navigation from './components/Navigation';
+import IntroScreen from './components/IntroScreen';
+import Intro, { isIntroComplete } from './pages/Intro';
+import DJSQuiz from './pages/DJSQuiz';
+import type { Page } from './types';
+import questionsData from './data/questions.json';
+import categoriesData from './data/categories.json';
+import type { Question, Category } from './types';
+
+const questions = questionsData as Question[];
+const categories = (categoriesData as { categories: Category[] }).categories;
+
+export default function App() {
+  const [showIntro, setShowIntro] = useState(true);
+  const [showFirstTimeIntro, setShowFirstTimeIntro] = useState(() => !isIntroComplete());
+  const [page, setPage] = useState<Page>('dashboard');
+  const [quizCategory, setQuizCategory] = useState<string | null>(null);
+  const gameState = useGameState();
+
+  // First-Time-Intro hat Vorrang — überspringt den Countdown-Overlay nicht.
+  if (showFirstTimeIntro) {
+    return (
+      <Intro
+        onStart={() => setShowFirstTimeIntro(false)}
+        onJumpToModule={(mod) => {
+          setShowFirstTimeIntro(false);
+          if (mod === 'quiz') setPage('quiz');
+          else if (mod === 'learn') setPage('learn');
+          // 'geo' und 'djs' sind v1.2-Routen — landen vorerst auf Dashboard.
+          else setPage('dashboard');
+        }}
+      />
+    );
+  }
+
+  const startQuiz = (category?: string) => {
+    setQuizCategory(category || null);
+    setPage('quiz');
+  };
+
+  const startLearn = (category?: string) => {
+    setQuizCategory(category || null);
+    setPage('learn');
+  };
+
+  const renderPage = () => {
+    switch (page) {
+      case 'dashboard':
+        return (
+          <Dashboard
+            questions={questions}
+            categories={categories}
+            gameState={gameState}
+            onStartQuiz={startQuiz}
+            onStartLearn={startLearn}
+            onNavigate={setPage}
+          />
+        );
+      case 'quiz':
+        return (
+          <QuizMode
+            questions={questions}
+            categories={categories}
+            gameState={gameState}
+            filterCategory={quizCategory}
+            onNavigate={setPage}
+          />
+        );
+      case 'learn':
+        return (
+          <LearningMode
+            questions={questions}
+            categories={categories}
+            gameState={gameState}
+            filterCategory={quizCategory}
+            onNavigate={setPage}
+          />
+        );
+      case 'stats':
+        return (
+          <Statistics
+            questions={questions}
+            categories={categories}
+            gameState={gameState}
+            onResetProgress={gameState.resetProgress}
+          />
+        );
+      case 'geo':
+        return (
+          <div style={{ padding: 24, textAlign: 'center', color: 'var(--color-text-muted)' }}>
+            <h2>GeoQuiz</h2>
+            <p>Kommt in v1.2 — Karten-Modus für Geografie-Fragen.</p>
+          </div>
+        );
+      case 'djs':
+        return <DJSQuiz onBack={() => setPage('dashboard')} />;
+    }
+  };
+
+  return (
+    <>
+      {showIntro && <IntroScreen onEnter={() => setShowIntro(false)} />}
+      <div
+        style={{
+          minHeight: '100vh',
+          background: 'var(--color-bg)',
+          color: 'var(--color-text)',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <Navigation currentPage={page} onNavigate={setPage} gameState={gameState.state} />
+
+        <main style={{ flex: 1, paddingBottom: 80 /* Platz für BottomNav */ }}>
+          <div style={{ maxWidth: 768, margin: '0 auto', padding: 16 }}>
+            {renderPage()}
+          </div>
+        </main>
+      </div>
+    </>
+  );
+}

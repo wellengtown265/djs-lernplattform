@@ -1,0 +1,114 @@
+[
+  {
+    "id": "djs-special-001",
+    "type": "textinput",
+    "question": "In welchem Jahr wurde die Deutsche Journalistenschule gegründet?",
+    "correctAnswers": ["1949"],
+    "context": "Die DJS wurde 1949 als Werner-Friedmann-Institut gegründet — auf einen Aufruf von Werner Friedmann in der Münchner Abendzeitung meldeten sich rund 1.700 Interessierte. 21 Personen (4 Frauen, 17 Männer) wurden für die erste Lehrredaktion ausgewählt. 1959 erfolgte die Gründung des Trägervereins, 1961 die Umbenennung in Deutsche Journalistenschule.",
+    "source": "DJS-Schulgeschichte / Factsheet",
+    "tags": ["historie", "gründung"]
+  },
+  {
+    "id": "djs-special-002",
+    "type": "textinput",
+    "question": "Wer gründete die DJS?",
+    "correctAnswers": ["Werner Friedmann", "Friedmann"],
+    "context": "Werner Friedmann, damals Journalist bei der Münchner Abendzeitung, rief 1949 zur ersten Lehrredaktion auf. Die Schule hieß zunächst Werner-Friedmann-Institut und wurde 1961 in Deutsche Journalistenschule umbenannt.",
+    "source": "DJS-Schulgeschichte",
+    "tags": ["historie", "personen"]
+  },
+  {
+    "id": "djs-special-003",
+    "type": "textinput",
+    "question": "Wie viele Ausbildungsplätze vergibt die DJS pro Jahr?",
+    "correctAnswers": ["45"],
+    "context": "Aktuell bildet die DJS jährlich 45 Nachwuchsjournalistinnen und -journalisten in drei Klassen aus — davon zwei Drittel im Kooperationsmodell mit der LMU München (Masterstudiengang Journalismus).",
+    "source": "DJS-Factsheet",
+    "tags": ["struktur", "aktuelles"]
+  },
+  {
+    "id": "djs-special-004",
+    "type": "multiplechoice",
+    "question": "Mit welcher Universität kooperiert die DJS für ihren Masterstudiengang Journalismus?",
+    "options": [
+      "Ludwig-Maximilians-Universität München",
+      "Technische Universität München",
+      "Universität Augsburg",
+      "Universität Regensburg"
+    ],
+    "correctAnswers": ["Ludwig-Maximilians-Universität München"],
+    "context": "Seit 2008 ist der Master Journalismus eine Kooperation mit der LMU München. Davor (ab 1973) lief ein Modellstudiengang Journalistik, ab 1979 als regulärer Studiengang. Die Hybridisierung von praktischer Lehrredaktion und universitärer Reflexion ist ein Markenzeichen der DJS.",
+    "source": "DJS / LMU München",
+    "tags": ["struktur", "kooperationen"]
+  },
+  {
+    "id": "djs-special-005",
+    "type": "multiplechoice",
+    "question": "Wie lange dauert die Kompaktausbildung der DJS (Stand 2026)?",
+    "options": ["12 Monate", "15 Monate", "18 Monate", "24 Monate"],
+    "correctAnswers": ["18 Monate"],
+    "context": "Seit 2026 kommuniziert die DJS eine Verlängerung der Kompaktausbildung auf 18 Monate. Der parallel laufende Masterstudiengang mit der LMU dauert 27 Monate. Beide Wege kombinieren intensive Praxisblöcke mit zwei Pflichtpraktika.",
+    "source": "DJS-Webseite / Factsheet 2026",
+    "tags": ["struktur", "aktuelles"]
+  },
+  {
+    "id": "djs-special-006",
+    "type": "textinput",
+    "question": "Wer leitet die DJS seit 2017?",
+    "correctAnswers": ["Henriette Löwisch", "Löwisch"],
+    "context": "Henriette Löwisch ist seit 2017 Direktorin der DJS. Unter ihrer Leitung wurden Podcast-Storytelling (2017), Wissenschaftsförderung (2018), Regionalfellowships (2020) und Diversitätsprogramme wie #DuKannstJournalismus (2023) systematisch ausgebaut. Vorgängerin war Mercedes Riederer (ab 1994, erste Frau in der Schulleitung).",
+    "source": "DJS-Schulgeschichte",
+    "tags": ["personen", "leitung"]
+  },
+  {
+    "id": "djs-special-007",
+    "type": "keywords",
+    "question": "Nenne mindestens drei der vier 'Säulen' der DJS-Ausbildung.",
+    "correctAnswers": ["Print", "Hörfunk", "Radio", "Fernsehen", "TV", "Online", "Digital", "Online-Journalismus"],
+    "requiredKeywords": 3,
+    "context": "Die DJS organisiert ihre Ausbildung crossmedial entlang von vier Säulen: Print (seit 1949), Hörfunk und Fernsehen (systematisch ab 1965) und Online-Journalismus (reguläre vierte Säule seit 2004). Das Curriculum wird laufend an neue Formate angepasst — Podcast-Storytelling kam 2017 fest dazu.",
+    "source": "DJS-Curriculum",
+    "tags": ["ausbildung", "curriculum"]
+  },
+  {
+    "id": "djs-special-008",
+    "type": "textinput",
+    "question": "Wie hoch ist das Schulgeld an der DJS?",
+    "correctAnswers": ["0", "kostenlos", "schulgeldfrei", "kein", "kein Schulgeld", "keines"],
+    "context": "Die DJS-Ausbildung ist schulgeldfrei. Finanziert wird sie durch eine breite Trägerschaft von rund 60 Trägern aus Medien, Verbänden und Stiftungen sowie durch Zuschüsse von Bund, Freistaat Bayern und der Landeshauptstadt München. Genau diese plurale Trägerschaft begründet den Unabhängigkeitsanspruch der Schule.",
+    "source": "DJS-Trägerschaft / Factsheet",
+    "tags": ["finanzen", "trägerschaft"]
+  },
+  {
+    "id": "djs-special-009",
+    "type": "textinput",
+    "question": "In welchem Jahr zog die DJS in die Hultschiner Straße in München?",
+    "correctAnswers": ["2012"],
+    "context": "2012 zog die DJS unter Direktor Jörg Sadrozinski an die Hultschiner Straße — nah am Münchner Verlagsstandort. Davor war die Schule seit 1961 am Altheimer Eck untergebracht.",
+    "source": "DJS-Schulgeschichte",
+    "tags": ["historie", "standort"]
+  },
+  {
+    "id": "djs-special-010",
+    "type": "keywords",
+    "question": "Nenne mindestens zwei wichtige Kritikpunkte, die in der wissenschaftlichen Literatur an der DJS geäußert werden.",
+    "correctAnswers": [
+      "soziale Selektivität",
+      "Selektivität",
+      "Herkunft",
+      "Elitenähe",
+      "Eliten",
+      "NS-Belastung",
+      "Nationalsozialismus",
+      "Transparenz",
+      "Datenintransparenz",
+      "Islamberichterstattung",
+      "Ausgewogenheit",
+      "Aufarbeitung"
+    ],
+    "requiredKeywords": 2,
+    "context": "Die Forschungsliteratur und investigative Berichte heben vier wiederkehrende Spannungen hervor: (1) soziale Selektivität der Bewerber- und Studierendenschaft, (2) institutionelle Nähe zu Medien- und Politik-Eliten, (3) unaufgearbeitete NS-Belastungen einzelner früher Dozenten, (4) punktuelle Debatten über Ausgewogenheit (u. a. das Islamberichterstattungs-Seminar 2018). Hinzu kommt Kritik an fehlender Datentransparenz: Es liegen keine umfassenden Jahresberichte oder vollständigen Haushalte vor.",
+    "source": "Akademische Recherche / DJS-Dossier",
+    "tags": ["kritik", "kontroversen"]
+  }
+]

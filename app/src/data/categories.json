@@ -1,0 +1,226 @@
+{
+  "categories": [
+    {
+      "id": "intl_politics",
+      "name": "Internationale Politik",
+      "icon": "🌍",
+      "color": "#3B82F6",
+      "colorLight": "#EFF6FF",
+      "description": "EU, NATO, Krisenregionen, Weltpolitik",
+      "subcategories": [
+        {
+          "id": "eu_europe",
+          "name": "EU & Europa"
+        },
+        {
+          "id": "nato_security",
+          "name": "NATO & Sicherheit"
+        },
+        {
+          "id": "crisis_regions",
+          "name": "Krisenregionen"
+        },
+        {
+          "id": "world_politics",
+          "name": "Weltpolitik"
+        }
+      ]
+    },
+    {
+      "id": "german_politics",
+      "name": "Deutsche Politik",
+      "icon": "🏛️",
+      "color": "#F59E0B",
+      "colorLight": "#FFFBEB",
+      "description": "Bundesregierung, Wahlen, Bundestag, Länder",
+      "subcategories": [
+        {
+          "id": "federal_gov",
+          "name": "Bundesregierung"
+        },
+        {
+          "id": "elections",
+          "name": "Wahlen"
+        },
+        {
+          "id": "federal_states",
+          "name": "Bundesländer"
+        },
+        {
+          "id": "domestic",
+          "name": "Innenpolitik"
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "name": "Wirtschaft & Finanzen",
+      "icon": "📈",
+      "color": "#10B981",
+      "colorLight": "#ECFDF5",
+      "description": "BIP, Inflation, Energie, Arbeit",
+      "subcategories": [
+        {
+          "id": "key_figures",
+          "name": "Kennzahlen"
+        },
+        {
+          "id": "german_economy",
+          "name": "Deutsche Wirtschaft"
+        },
+        {
+          "id": "energy",
+          "name": "Energie"
+        },
+        {
+          "id": "labor",
+          "name": "Arbeit"
+        }
+      ]
+    },
+    {
+      "id": "culture_media",
+      "name": "Kultur & Medien",
+      "icon": "🎭",
+      "color": "#8B5CF6",
+      "colorLight": "#F5F3FF",
+      "description": "Literaturpreise, Film, Journalismus, Medienlandschaft",
+      "subcategories": [
+        {
+          "id": "literature_prizes",
+          "name": "Literatur & Preise"
+        },
+        {
+          "id": "film_art",
+          "name": "Film & Kunst"
+        },
+        {
+          "id": "media_landscape",
+          "name": "Medienlandschaft"
+        },
+        {
+          "id": "journalism",
+          "name": "Journalismus"
+        }
+      ]
+    },
+    {
+      "id": "sport",
+      "name": "Sport",
+      "icon": "⚽",
+      "color": "#EF4444",
+      "colorLight": "#FEF2F2",
+      "description": "Olympia, Fußball, Doping, Turniere",
+      "subcategories": [
+        {
+          "id": "olympics",
+          "name": "Olympia"
+        },
+        {
+          "id": "football",
+          "name": "Fußball"
+        },
+        {
+          "id": "other_sports",
+          "name": "Andere Sportarten"
+        }
+      ]
+    },
+    {
+      "id": "science_tech",
+      "name": "Wissenschaft & Technik",
+      "icon": "🔬",
+      "color": "#06B6D4",
+      "colorLight": "#ECFEFF",
+      "description": "Raumfahrt, KI, Digitales, Gesundheit",
+      "subcategories": [
+        {
+          "id": "space",
+          "name": "Raumfahrt"
+        },
+        {
+          "id": "ai_digital",
+          "name": "KI & Digitales"
+        },
+        {
+          "id": "research",
+          "name": "Forschung"
+        },
+        {
+          "id": "health",
+          "name": "Gesundheit"
+        }
+      ]
+    },
+    {
+      "id": "society_law",
+      "name": "Gesellschaft & Recht",
+      "icon": "⚖️",
+      "color": "#F97316",
+      "colorLight": "#FFF7ED",
+      "description": "Urteile, Migration, Proteste, Sprache",
+      "subcategories": [
+        {
+          "id": "court_rulings",
+          "name": "Grundsatzurteile"
+        },
+        {
+          "id": "migration",
+          "name": "Migration"
+        },
+        {
+          "id": "protests",
+          "name": "Proteste & Bewegungen"
+        },
+        {
+          "id": "language",
+          "name": "Sprache & Unwort"
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "name": "Geografie & Karten",
+      "icon": "🗺️",
+      "color": "#84CC16",
+      "colorLight": "#F7FEE7",
+      "description": "Länderwissen, Nachbarstaaten, Hauptstädte",
+      "subcategories": [
+        {
+          "id": "europe_geo",
+          "name": "Europa"
+        },
+        {
+          "id": "middle_east",
+          "name": "Naher Osten"
+        },
+        {
+          "id": "asia",
+          "name": "Asien"
+        },
+        {
+          "id": "africa_america",
+          "name": "Afrika & Amerika"
+        }
+      ]
+    },
+    {
+      "id": "bildertest",
+      "name": "Bildertest",
+      "icon": "📸",
+      "color": "#f59e0b",
+      "colorLight": "#fffbeb",
+      "description": "Personen & Ereignisse der letzten 12 Monate erkennen — DJS-Klassiker.",
+      "subcategories": [
+        {
+          "id": "personen",
+          "name": "Personen"
+        },
+        {
+          "id": "ereignisse",
+          "name": "Ereignisse & Objekte"
+        }
+      ]
+    }
+  ]
+}

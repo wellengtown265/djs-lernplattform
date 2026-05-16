@@ -1,0 +1,528 @@
+{
+  "bt26-r01-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Alexander Dobrindt",
+    "candidates": []
+  },
+  "bt26-r01-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Karin Prien",
+    "candidates": []
+  },
+  "bt26-r01-06": {
+    "status": "READY",
+    "name": "Bärbel Bas",
+    "localPath": "/bildertest/2026/r01/barbel-bas.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File%3ABaerbelBas.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "credit": "Büro Bärbel Bas",
+    "artist": "Fotografin des Bildes ist Angelika Kohlmeier, uneingeschränktes Nutzungsrecht liegt dem Büro Bärbel Bas vor",
+    "photographer": "Fotografin des Bildes ist Angelika Kohlmeier, uneingeschränktes Nutzungsrecht liegt dem Büro Bärbel Bas vor",
+    "candidates": [
+      {
+        "title": "File:BaerbelBas.JPG",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/BaerbelBas.JPG/960px-BaerbelBas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3ABaerbelBas.JPG",
+        "license": "CC BY-SA 3.0",
+        "artist": "Fotografin des Bildes ist Angelika Kohlmeier, uneingeschränktes Nutzungsrecht liegt dem Büro Bärbel Bas vor"
+      },
+      {
+        "title": "File:BärbelBas.JPG",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/B%C3%A4rbelBas.JPG/960px-B%C3%A4rbelBas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AB%C3%A4rbelBas.JPG",
+        "license": "CC BY-SA 3.0 de",
+        "artist": "Fotografin des Bildes ist Angelika Kohlmeier, uneingeschränktes Nutzungsrecht liegt dem Büro Bärbel Bas vor"
+      },
+      {
+        "title": "File:Bas, Bärbel-1670.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bas%2C_B%C3%A4rbel-1670.jpg/960px-Bas%2C_B%C3%A4rbel-1670.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3ABas%2C%20B%C3%A4rbel-1670.jpg",
+        "license": "CC BY 4.0",
+        "artist": "Foto-AG Gymnasium Melle"
+      }
+    ]
+  },
+  "bt26-r01-08": {
+    "status": "READY",
+    "name": "Boris Pistorius",
+    "localPath": "/bildertest/2026/r01/boris-pistorius.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File%3ABoris%20Pistorius%20(2019)%20(cropped).jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "credit": "Own work",
+    "artist": "Daniel Biskup",
+    "photographer": "Daniel Biskup",
+    "candidates": [
+      {
+        "title": "File:Boris Pistorius (2019) (cropped).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Boris_Pistorius_%282019%29_%28cropped%29.jpg/960px-Boris_Pistorius_%282019%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3ABoris%20Pistorius%20(2019)%20(cropped).jpg",
+        "license": "CC BY-SA 3.0",
+        "artist": "Daniel Biskup"
+      }
+    ]
+  },
+  "bt26-r02-03": {
+    "status": "DOWNLOAD_FAILED",
+    "name": "Sahra Wagenknecht",
+    "localPath": "/bildertest/2026/r02/sahra-wagenknecht.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File%3A14-09-11-Sarah-Wagenknecht-RalfR-008.jpg",
+    "license": "CC BY-SA 3.0 at",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+    "credit": "Own work",
+    "artist": "Ralf Roletschek",
+    "photographer": "Ralf Roletschek",
+    "candidates": [
+      {
+        "title": "File:14-09-11-Sarah-Wagenknecht-RalfR-008.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/14-09-11-Sarah-Wagenknecht-RalfR-008.jpg/960px-14-09-11-Sarah-Wagenknecht-RalfR-008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3A14-09-11-Sarah-Wagenknecht-RalfR-008.jpg",
+        "license": "CC BY-SA 3.0 at",
+        "artist": "Ralf Roletschek"
+      },
+      {
+        "title": "File:Wagenknecht, Sahra-1081.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wagenknecht%2C_Sahra-1081.jpg/960px-Wagenknecht%2C_Sahra-1081.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AWagenknecht%2C%20Sahra-1081.jpg",
+        "license": "CC BY 3.0",
+        "artist": "Foto-AG Gymnasium Melle"
+      },
+      {
+        "title": "File:2014-09-11 - Sahra Wagenknecht MdB - 8301.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/2014-09-11_-_Sahra_Wagenknecht_MdB_-_8301.jpg/960px-2014-09-11_-_Sahra_Wagenknecht_MdB_-_8301.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3A2014-09-11%20-%20Sahra%20Wagenknecht%20MdB%20-%208301.jpg",
+        "license": "CC BY-SA 3.0 de",
+        "artist": "Sven Teschke"
+      }
+    ]
+  },
+  "bt26-r02-04": {
+    "status": "DOWNLOAD_FAILED",
+    "name": "Heidi Reichinnek",
+    "localPath": "/bildertest/2026/r02/heidi-reichinnek.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AOfficial%20Portrait%20of%20Heidi%20Reichinnek.png",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Offizielles Lizenzporträt des Bundestages. https://www.bundestag.de/abgeordnete/biografien/R/reichinnek_heidi-861074",
+    "artist": "Olaf Krostitz",
+    "photographer": "Olaf Krostitz",
+    "candidates": [
+      {
+        "title": "File:Official Portrait of Heidi Reichinnek.png",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Official_Portrait_of_Heidi_Reichinnek.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AOfficial%20Portrait%20of%20Heidi%20Reichinnek.png",
+        "license": "CC BY-SA 4.0",
+        "artist": "Olaf Krostitz"
+      }
+    ]
+  },
+  "bt26-r02-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Jürgen Elsässer",
+    "candidates": []
+  },
+  "bt26-r02-06": {
+    "status": "READY",
+    "name": "Ekrem İmamoğlu",
+    "localPath": "/bildertest/2026/r02/ekrem-imamoglu.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AEkrem%20%C4%B0mamo%C4%9Flu%2020190522%202(cropped).jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "credit": "https://www.voaturkce.com/a/i%CC%87mamo%C4%9Flu-nun-kampanyas%C4%B1nda-i%CC%87sraf-%C3%B6ne-%C3%A7%C4%B1kacak/4927797.html",
+    "artist": "Hilmi Hacaloğlu",
+    "photographer": "Hilmi Hacaloğlu",
+    "candidates": [
+      {
+        "title": "File:Ekrem İmamoğlu 20190522 2(cropped).jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Ekrem_%C4%B0mamo%C4%9Flu_20190522_2%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AEkrem%20%C4%B0mamo%C4%9Flu%2020190522%202(cropped).jpg",
+        "license": "Public domain",
+        "artist": "Hilmi Hacaloğlu"
+      }
+    ]
+  },
+  "bt26-r02-07": {
+    "status": "DOWNLOAD_FAILED",
+    "name": "Yoon Suk Yeol",
+    "localPath": "/bildertest/2026/r02/yoon-suk-yeol.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File%3ASouth%20Korea%20President%20Yoon%20Suk%20Yeol%20portrait%20(crop).jpg",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "credit": "대한민국 대통령실",
+    "artist": "대한민국 대통령실",
+    "photographer": "대한민국 대통령실",
+    "candidates": [
+      {
+        "title": "File:Yoon Suk-yeol appears on 3Pro TV and explains his economic policy.png",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Yoon_Suk-yeol_appears_on_3Pro_TV_and_explains_his_economic_policy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AYoon%20Suk-yeol%20appears%20on%203Pro%20TV%20and%20explains%20his%20economic%20policy.png",
+        "license": "CC BY 3.0",
+        "artist": "삼프로TV_경제의신과함께"
+      },
+      {
+        "title": "File:Yoon Suk-yeol 2022.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Yoon_Suk-yeol_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AYoon%20Suk-yeol%202022.jpg",
+        "license": "Public domain",
+        "artist": "Office of the President of the United States"
+      },
+      {
+        "title": "File:South Korea President Yoon Suk Yeol portrait.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/South_Korea_President_Yoon_Suk_Yeol_portrait.jpg/960px-South_Korea_President_Yoon_Suk_Yeol_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3ASouth%20Korea%20President%20Yoon%20Suk%20Yeol%20portrait.jpg",
+        "license": "CC BY-SA 3.0",
+        "artist": "Office of the President of South Korea"
+      }
+    ]
+  },
+  "bt26-r02-08": {
+    "status": "DOWNLOAD_FAILED",
+    "name": "Gisèle Pelicot",
+    "localPath": "/bildertest/2026/r02/gisele-pelicot.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AGis%C3%A8le%20Pelicot%2C%20pencil%20drawing.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Own work",
+    "artist": "W.carter",
+    "photographer": "W.carter",
+    "candidates": [
+      {
+        "title": "File:Gisèle Pélicot.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gis%C3%A8le_P%C3%A9licot.jpg/960px-Gis%C3%A8le_P%C3%A9licot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AGis%C3%A8le%20P%C3%A9licot.jpg",
+        "license": "CC BY 4.0",
+        "artist": "Waltercolor"
+      },
+      {
+        "title": "File:Gisèle Pelicot, pencil drawing.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Gis%C3%A8le_Pelicot%2C_pencil_drawing.jpg/960px-Gis%C3%A8le_Pelicot%2C_pencil_drawing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AGis%C3%A8le%20Pelicot%2C%20pencil%20drawing.jpg",
+        "license": "CC BY-SA 4.0",
+        "artist": "W.carter"
+      },
+      {
+        "title": "File:Gisèle Pelicot portrait.jpg",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Gis%C3%A8le_Pelicot_portrait.jpg/960px-Gis%C3%A8le_Pelicot_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File%3AGis%C3%A8le%20Pelicot%20portrait.jpg",
+        "license": "CC BY-SA 4.0",
+        "artist": "W.carter"
+      }
+    ]
+  },
+  "bt26-r03-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Ursula von der Leyen",
+    "candidates": []
+  },
+  "bt26-r03-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Kaja Kallas",
+    "candidates": []
+  },
+  "bt26-r03-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "António Costa",
+    "candidates": []
+  },
+  "bt26-r03-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Roberta Metsola",
+    "candidates": []
+  },
+  "bt26-r03-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Mark Rutte",
+    "candidates": []
+  },
+  "bt26-r03-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Andrius Kubilius",
+    "candidates": []
+  },
+  "bt26-r03-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Michael McGrath",
+    "candidates": []
+  },
+  "bt26-r03-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Henna Virkkunen",
+    "candidates": []
+  },
+  "bt26-r04-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Donald Trump",
+    "candidates": []
+  },
+  "bt26-r04-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "J. D. Vance",
+    "candidates": []
+  },
+  "bt26-r04-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Marco Rubio",
+    "candidates": []
+  },
+  "bt26-r04-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Pete Hegseth",
+    "candidates": []
+  },
+  "bt26-r04-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Jeffrey Goldberg",
+    "candidates": []
+  },
+  "bt26-r04-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Elon Musk",
+    "candidates": []
+  },
+  "bt26-r04-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Cory Booker",
+    "candidates": []
+  },
+  "bt26-r04-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Jerome Powell",
+    "candidates": []
+  },
+  "bt26-r05-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Wolodymyr Selenskyj",
+    "candidates": []
+  },
+  "bt26-r05-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Wladimir Putin",
+    "candidates": []
+  },
+  "bt26-r05-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Benjamin Netanjahu",
+    "candidates": []
+  },
+  "bt26-r05-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Karim Khan",
+    "candidates": []
+  },
+  "bt26-r05-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "António Guterres",
+    "candidates": []
+  },
+  "bt26-r05-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Volker Türk",
+    "candidates": []
+  },
+  "bt26-r05-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Philippe Lazzarini",
+    "candidates": []
+  },
+  "bt26-r05-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Steve Witkoff",
+    "candidates": []
+  },
+  "bt26-r06-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Abdel Fattah al-Burhan",
+    "candidates": []
+  },
+  "bt26-r06-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Mohamed Hamdan Dagalo (Hemedti)",
+    "candidates": []
+  },
+  "bt26-r06-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Félix Tshisekedi",
+    "candidates": []
+  },
+  "bt26-r06-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Paul Kagame",
+    "candidates": []
+  },
+  "bt26-r06-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "María Corina Machado",
+    "candidates": []
+  },
+  "bt26-r06-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Nayib Bukele",
+    "candidates": []
+  },
+  "bt26-r06-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Daniel Noboa",
+    "candidates": []
+  },
+  "bt26-r07-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Christine Lagarde",
+    "candidates": []
+  },
+  "bt26-r07-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Kristalina Georgieva",
+    "candidates": []
+  },
+  "bt26-r07-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Ngozi Okonjo-Iweala",
+    "candidates": []
+  },
+  "bt26-r07-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Jensen Huang",
+    "candidates": []
+  },
+  "bt26-r07-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Sam Altman",
+    "candidates": []
+  },
+  "bt26-r07-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Sundar Pichai",
+    "candidates": []
+  },
+  "bt26-r07-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Tim Cook",
+    "candidates": []
+  },
+  "bt26-r07-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Demis Hassabis",
+    "candidates": []
+  },
+  "bt26-r08-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "László Krasznahorkai",
+    "candidates": []
+  },
+  "bt26-r08-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Paul Thomas Anderson",
+    "candidates": []
+  },
+  "bt26-r08-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Conan O'Brien",
+    "candidates": []
+  },
+  "bt26-r08-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "İlker Çatak",
+    "candidates": []
+  },
+  "bt26-r08-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Sandra Hüller",
+    "candidates": []
+  },
+  "bt26-r08-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Jafar Panahi",
+    "candidates": []
+  },
+  "bt26-r08-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Arundhati Roy",
+    "candidates": []
+  },
+  "bt26-r08-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Maria Ressa",
+    "candidates": []
+  },
+  "bt26-r09-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Sarina Wiegman",
+    "candidates": []
+  },
+  "bt26-r09-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Chloe Kelly",
+    "candidates": []
+  },
+  "bt26-r09-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Hannah Hampton",
+    "candidates": []
+  },
+  "bt26-r09-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Aitana Bonmatí",
+    "candidates": []
+  },
+  "bt26-r09-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Cole Palmer",
+    "candidates": []
+  },
+  "bt26-r09-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Reece James",
+    "candidates": []
+  },
+  "bt26-r09-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Johannes Lochner",
+    "candidates": []
+  },
+  "bt26-r09-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Tobias Wendl und Tobias Arlt",
+    "candidates": []
+  },
+  "bt26-r10-01": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Simon Stiell",
+    "candidates": []
+  },
+  "bt26-r10-02": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Luiz Inácio Lula da Silva",
+    "candidates": []
+  },
+  "bt26-r10-03": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Marina Silva",
+    "candidates": []
+  },
+  "bt26-r10-04": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Tedros Adhanom Ghebreyesus",
+    "candidates": []
+  },
+  "bt26-r10-05": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Jim Skea",
+    "candidates": []
+  },
+  "bt26-r10-06": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Fatih Birol",
+    "candidates": []
+  },
+  "bt26-r10-07": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Suni Williams",
+    "candidates": []
+  },
+  "bt26-r10-08": {
+    "status": "NO_FREE_IMAGE_YET",
+    "name": "Butch Wilmore",
+    "candidates": []
+  }
+}

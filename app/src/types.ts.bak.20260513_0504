@@ -1,0 +1,78 @@
+/**
+ * Qualitätssicherungs-Status pro Frage (aus KORREKTUR_FRAGEN_V1.md):
+ *  - ok                 — sachlich korrekt, freigegeben
+ *  - ok-präzisieren     — Antwort stimmt, Erklärung kleinere Ungenauigkeit
+ *  - korrigieren        — relevanter Fehler in Antwort oder Erklärung
+ *  - umformulieren      — mehrdeutig / zeitlich unscharf / unfair
+ *  - aktualisieren      — war richtig, ist für 2026 nicht mehr aktuell
+ *  - archiv             — richtig, aber Basiswissen, nicht zentral für 2025/26
+ *  - streichen          — für die Plattform in dieser Form ungeeignet
+ */
+export type ReviewStatus =
+  | 'ok'
+  | 'ok-präzisieren'
+  | 'korrigieren'
+  | 'umformulieren'
+  | 'aktualisieren'
+  | 'archiv'
+  | 'streichen';
+
+export interface Question {
+  id: string;
+  year: number;
+  type: 'singlechoice' | 'multiplechoice' | 'cloze' | 'matching';
+  category: string;
+  subcategory: string;
+  difficulty: 'leicht' | 'mittel' | 'schwer';
+  question: string;
+  options: string[];
+  correctAnswers: string[];
+  explanation: string;
+  context: string;
+  sources: { title: string; url: string }[];
+  relatedQuestions: string[];
+  tags: string[];
+  verificationStatus: string;
+
+  /** QS-Status nach Prüfbericht. Default-Fallback in Code: 'ok'. */
+  reviewStatus?: ReviewStatus;
+  /** Kurzer Hinweis, was zu tun ist (Referenz auf KORREKTUR-Bericht oder konkrete Notiz) */
+  reviewNote?: string;
+  /** Stichtag, an dem die Antwort wahr war (ISO YYYY-MM-DD).
+   *  Pflicht für Fragen mit relativen Zeitangaben ("aktuell", "letzte 12 Monate"). */
+  asOfDate?: string;
+}
+
+export interface Category {
+  id: string;
+  name: string;
+  icon: string;
+  color: string;
+  colorLight: string;
+  description: string;
+  subcategories: { id: string; name: string }[];
+}
+
+export interface QuestionProgress {
+  questionId: string;
+  timesCorrect: number;
+  timesWrong: number;
+  lastAnswered: string;
+  nextReview: string;
+  interval: number;
+  confidence: 'new' | 'wrong' | 'unsure' | 'correct' | 'verySure' | 'mastered';
+}
+
+export interface GameState {
+  xp: number;
+  streak: number;
+  lastSessionDate: string;
+  todayAnswered: number;
+  todayCorrect: number;
+  weekAnswered: number;
+  badges: string[];
+  progress: Record<string, QuestionProgress>;
+  sessionHistory: { date: string; correct: number; total: number; xp: number }[];
+}
+
+export type Page = 'dashboard' | 'quiz' | 'learn' | 'geo' | 'djs' | 'stats';

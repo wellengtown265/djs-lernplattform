@@ -1,0 +1,201 @@
+/**
+ * BildertestMode (V1.3 Foundation)
+ *
+ * - Startscreen: 10 Rundenkarten mit Mix / Schwierigkeit / Fortschritt
+ * - In einer Runde: Sequenz von 12 BildertestCard
+ * - Round-Summary nach letzter Karte
+ *
+ * Bilder sind aktuell überwiegend PLATZHALTER (image.status === 'NEEDS_IMAGE_REVIEW').
+ * Echte Bilder kommen erst nach Lizenzprüfung — der Test ist lehrreich
+ * auch ohne Foto, weil der Prompt + Auflösung den Kontext liefert.
+ */
+import { useMemo, useState } from 'react';
+import bildertestData from '../data/bildertestRounds.json';
+import type { BildertestItem, BildertestRound } from '../types-bildertest';
+import { BildertestCard } from '../components/BildertestCard';
+import { useBildertestState } from '../hooks/useBildertestState';
+
+const ROUNDS: BildertestRound[] = (bildertestData as any).rounds as BildertestRound[];
+
+export function BildertestMode() {
+  const [view, setView] = useState<'start' | 'round' | 'summary'>('start');
+  const [activeRoundId, setActiveRoundId] = useState<string | null>(null);
+  const [itemIdx, setItemIdx] = useState(0);
+  const { state, rateItem, setLastRound, getRoundStats } = useBildertestState();
+
+  const activeRound = useMemo(
+    () => ROUNDS.find(r => r.id === activeRoundId),
+    [activeRoundId]
+  );
+
+  const totalItems = ROUNDS.reduce((s, r) => s + r.items.length, 0);
+  const totalDone = Object.keys(state.items).length;
+
+  function startRound(roundId: string) {
+    setActiveRoundId(roundId);
+    setLastRound(roundId);
+    setItemIdx(0);
+    setView('round');
+  }
+
+  function handleNext() {
+    if (!activeRound) return;
+    if (itemIdx + 1 >= activeRound.items.length) {
+      setView('summary');
+    } else {
+      setItemIdx(itemIdx + 1);
+    }
+  }
+
+  function backToStart() {
+    setView('start');
+    setActiveRoundId(null);
+    setItemIdx(0);
+  }
+
+  // ─────────────── START VIEW ───────────────
+  if (view === 'start') {
+    return (
+      <div className="max-w-5xl mx-auto px-4 py-8">
+        {/* Hero */}
+        <div className="mb-8 text-center">
+          <div className="text-5xl mb-3">📸</div>
+          <h1 className="text-4xl font-serif text-gray-100 mb-2">Bildertest</h1>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Personen und Ereignisse aus den letzten 12 Monaten erkennen und einordnen.
+            10 Runden à 12 Bilder, gemischt nach Themen.
+          </p>
+          <div className="mt-4 text-sm text-gray-500">
+            <span className="font-semibold text-gray-300">{totalDone}</span> / {totalItems} Items bearbeitet
+          </div>
+        </div>
+
+        {/* Transparency note */}
+        <div className="mb-8 p-4 rounded-lg bg-amber-900/20 border border-amber-700/40 text-sm text-amber-200">
+          <strong>📋 Aktueller Stand:</strong> Die Fotos sind noch nicht lizenziert.
+          Jede Karte zeigt zunächst nur Prompt + Kontext. Bildauswahl &amp; Lizenzprüfung
+          folgen in der nächsten Iteration (siehe <code className="text-amber-300">BILDERTEST_2026_QUELLEN…md</code>).
+        </div>
+
+        {/* Round grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {ROUNDS.map(round => {
+            const stats = getRoundStats(round.items.map(i => i.id));
+            const personCount = round.items.filter(i => i.itemType === 'person').length;
+            const otherCount = round.items.length - personCount;
+
+            return (
+              <button
+                key={round.id}
+                onClick={() => startRound(round.id)}
+                className="text-left p-5 bg-gray-900 hover:bg-gray-800 rounded-xl border border-gray-800 hover:border-red-700 transition-all"
+              >
+                <div className="flex items-baseline justify-between mb-2">
+                  <div className="text-xs font-mono text-gray-500 uppercase">{round.id}</div>
+                  <div className="text-xs text-gray-400">{stats.percentDone}%</div>
+                </div>
+                <h3 className="text-lg font-serif text-gray-100 mb-1.5">{round.title}</h3>
+                <p className="text-sm text-gray-400 mb-3 line-clamp-2">{round.focus}</p>
+
+                <div className="flex items-center justify-between text-xs">
+                  <div className="text-gray-500">
+                    👤 {personCount} · 🎬 {otherCount}
+                  </div>
+                  <div className="text-gray-500">
+                    {stats.done}/{stats.total} bearbeitet
+                  </div>
+                </div>
+
+                {/* Progress bar */}
+                <div className="mt-2 h-1 bg-gray-800 rounded overflow-hidden">
+                  <div className="h-full bg-emerald-500 transition-all"
+                       style={{ width: `${stats.percentDone}%` }} />
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // ─────────────── ROUND VIEW ───────────────
+  if (view === 'round' && activeRound) {
+    const item = activeRound.items[itemIdx];
+    return (
+      <div className="max-w-2xl mx-auto px-4 py-6">
+        <button
+          onClick={backToStart}
+          className="text-sm text-gray-400 hover:text-gray-200 mb-4"
+        >
+          ← Zurück zur Rundenübersicht
+        </button>
+        <div className="mb-4 text-xs uppercase tracking-wider text-gray-500">
+          {activeRound.id} · {activeRound.title}
+        </div>
+        <BildertestCard
+          item={item}
+          index={itemIdx}
+          total={activeRound.items.length}
+          onRate={(r) => rateItem(item.id, r)}
+          onNext={handleNext}
+          isLast={itemIdx + 1 >= activeRound.items.length}
+        />
+      </div>
+    );
+  }
+
+  // ─────────────── SUMMARY VIEW ───────────────
+  if (view === 'summary' && activeRound) {
+    const ids = activeRound.items.map(i => i.id);
+    const stats = getRoundStats(ids);
+    const ratedItems = ids.map(id => state.items[id]).filter(Boolean);
+    const correctPct = ratedItems.length ? Math.round(stats.correct / ratedItems.length * 100) : 0;
+
+    return (
+      <div className="max-w-2xl mx-auto px-4 py-8 text-center">
+        <div className="text-5xl mb-3">🏁</div>
+        <h2 className="text-3xl font-serif text-gray-100 mb-2">Runde beendet</h2>
+        <p className="text-gray-400 mb-8">{activeRound.title}</p>
+
+        <div className="grid grid-cols-3 gap-3 mb-8">
+          <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
+            <div className="text-3xl font-semibold text-emerald-400">{stats.correct}</div>
+            <div className="text-xs uppercase tracking-wider text-gray-500 mt-1">Gewusst</div>
+          </div>
+          <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
+            <div className="text-3xl font-semibold text-amber-400">{stats.half}</div>
+            <div className="text-xs uppercase tracking-wider text-gray-500 mt-1">Halb</div>
+          </div>
+          <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
+            <div className="text-3xl font-semibold text-gray-400">
+              {ratedItems.length - stats.correct - stats.half}
+            </div>
+            <div className="text-xs uppercase tracking-wider text-gray-500 mt-1">Nicht</div>
+          </div>
+        </div>
+
+        <div className="text-sm text-gray-400 mb-8">
+          Trefferquote: <span className="text-gray-200 font-semibold">{correctPct}%</span>
+        </div>
+
+        <div className="flex gap-3 justify-center">
+          <button
+            onClick={backToStart}
+            className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-gray-200 rounded-lg"
+          >
+            Andere Runde
+          </button>
+          <button
+            onClick={() => startRound(activeRound.id)}
+            className="px-6 py-3 bg-red-700 hover:bg-red-600 text-white rounded-lg"
+          >
+            Nochmal
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}

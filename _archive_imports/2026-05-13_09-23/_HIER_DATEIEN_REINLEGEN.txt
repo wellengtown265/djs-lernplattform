@@ -1,0 +1,11 @@
+Lege hier neue Dateien ab, die Claude verarbeiten soll:
+
+- Markdown-Dateien (Fragen, Konzepte, Recherche)
+- Fotos / Bilder (JPG, PNG)
+- PDFs
+- JSON / CSV Exports
+
+Sag Claude dann im Chat:  "schau mal in IMPORT"
+
+Am Session-Ende doppelklick auf "▶ Session-Ende.command" im Hauptordner —
+dann wird der IMPORT-Ordner geleert und nach _archive_imports/<datum>/ verschoben.

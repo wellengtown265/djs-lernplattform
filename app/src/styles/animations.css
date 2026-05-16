@@ -1,0 +1,66 @@
+/**
+ * DJS Design System — Keyframe Animations
+ *
+ * Verwendet via Utility-Klasse:
+ *   <div className="djs-anim-fade-in">…</div>
+ *
+ * oder inline:
+ *   style={{ animation: `djs-fade-in var(--duration-base) var(--ease-smooth)` }}
+ */
+
+/* ---------- Fade In ---------- */
+@keyframes djs-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.djs-anim-fade-in {
+  animation: djs-fade-in var(--duration-base) var(--ease-smooth) both;
+}
+
+/* ---------- Slide Up (springy) ---------- */
+@keyframes djs-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.djs-anim-slide-up {
+  animation: djs-slide-up var(--duration-slow) var(--ease-springy) both;
+}
+
+/* ---------- Pulse (endlos) ---------- */
+@keyframes djs-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.6; }
+}
+
+.djs-anim-pulse {
+  animation: djs-pulse 2s var(--ease-linear) infinite;
+}
+
+/* ---------- Bounce (Celebration) ---------- */
+@keyframes djs-bounce {
+  0%   { transform: scale(0.8); opacity: 0; }
+  60%  { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+.djs-anim-bounce {
+  animation: djs-bounce var(--duration-celebration) var(--ease-bounce) both;
+}
+
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .djs-anim-fade-in,
+  .djs-anim-slide-up,
+  .djs-anim-pulse,
+  .djs-anim-bounce {
+    animation: none;
+  }
+}

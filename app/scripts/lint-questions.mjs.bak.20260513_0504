@@ -1,0 +1,230 @@
+#!/usr/bin/env node
+/**
+ * lint-questions.mjs — Qualitäts-Checks für questions.json
+ *
+ * Läuft als: `npm run lint:questions`
+ *
+ * Drei Severity-Stufen:
+ *   ERROR  — blockiert (Frage darf so nicht ins Quiz; build fail)
+ *   WARN   — sollte gefixt werden, ist aber nicht blockierend
+ *   INFO   — kosmetisch / Hinweis
+ *
+ * Checks:
+ *   E1  Doppelte ID
+ *   E2  Leere correctAnswers
+ *   E3  correctAnswer nicht in options (bei singlechoice/multiplechoice)
+ *   E4  Frage ohne Frage-Text
+ *   E5  Ungültiger reviewStatus
+ *   W1  Keine Quelle mit URL (sources[].url leer)
+ *   W2  Relative Zeitangabe ("aktuell", "kürzlich", ...) ohne asOfDate
+ *   W3  Leere explanation oder context
+ *   W4  Status "ok"/"ok-präzisieren" aber im Bericht als kritisch markiert (reviewNote vorhanden, Status passt nicht)
+ *   I1  relatedQuestions leer (informativ)
+ */
+
+import { readFileSync } from 'node:fs';
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const QUESTIONS_PATH = resolve(__dirname, '../src/data/questions.json');
+
+// ---------- Konfiguration ----------
+
+const VALID_STATUS = new Set([
+  'ok', 'ok-präzisieren', 'korrigieren', 'umformulieren',
+  'aktualisieren', 'archiv', 'streichen',
+]);
+const PLAYABLE_STATUS = new Set(['ok', 'ok-präzisieren']);
+
+// Relative Zeitangaben, die ohne asOfDate problematisch sind.
+// Bewusst restriktiv — false positives nerven mehr als hilfreich.
+const RELATIVE_TIME_PATTERNS = [
+  /\baktuell\b/i,
+  /\bkürzlich\b/i,
+  /\bneulich\b/i,
+  /\bvor kurzem\b/i,
+  /\bin den letzten \d+ (tagen|wochen|monaten|jahren)\b/i,
+  /\bin den vergangenen \d+ (tagen|wochen|monaten|jahren)\b/i,
+  /\bseit kurzem\b/i,
+  /\bderzeit\b/i,
+  /\bgegenwärtig\b/i,
+];
+
+// ---------- ANSI ----------
+
+const C = {
+  reset: '\x1b[0m',
+  dim:   '\x1b[2m',
+  red:   '\x1b[31m',
+  yel:   '\x1b[33m',
+  cyan:  '\x1b[36m',
+  green: '\x1b[32m',
+  bold:  '\x1b[1m',
+};
+const isTTY = process.stdout.isTTY;
+const c = (col, s) => (isTTY ? col + s + C.reset : s);
+
+// ---------- Helpers ----------
+
+function findRelativeTime(text) {
+  if (!text) return null;
+  for (const p of RELATIVE_TIME_PATTERNS) {
+    const m = text.match(p);
+    if (m) return m[0];
+  }
+  return null;
+}
+
+// ---------- Main ----------
+
+const raw = readFileSync(QUESTIONS_PATH, 'utf-8');
+let questions;
+try {
+  questions = JSON.parse(raw);
+} catch (e) {
+  console.error(c(C.red, `✗ questions.json ist kein gültiges JSON: ${e.message}`));
+  process.exit(2);
+}
+
+const issues = [];   // {severity, code, id, msg}
+
+function push(severity, code, id, msg) {
+  issues.push({ severity, code, id, msg });
+}
+
+// E1: Doppelte IDs
+const seenIds = new Map();
+for (const q of questions) {
+  if (!q.id) {
+    push('ERROR', 'E4', '(ohne id)', 'Frage hat keine id');
+    continue;
+  }
+  if (seenIds.has(q.id)) {
+    push('ERROR', 'E1', q.id, `Doppelte ID (erstmals an Position ${seenIds.get(q.id) + 1})`);
+  } else {
+    seenIds.set(q.id, questions.indexOf(q));
+  }
+}
+
+// Per-Frage-Checks
+for (const q of questions) {
+  const id = q.id ?? '(unknown)';
+
+  // E2: leere correctAnswers
+  if (!Array.isArray(q.correctAnswers) || q.correctAnswers.length === 0) {
+    push('ERROR', 'E2', id, 'correctAnswers ist leer');
+  }
+
+  // E3: correctAnswer nicht in options (nur bei choice-Types)
+  if ((q.type === 'singlechoice' || q.type === 'multiplechoice') && Array.isArray(q.options) && Array.isArray(q.correctAnswers)) {
+    for (const ca of q.correctAnswers) {
+      if (!q.options.includes(ca)) {
+        push('ERROR', 'E3', id, `correctAnswer "${ca}" steht nicht in options`);
+      }
+    }
+  }
+
+  // E4: Frage-Text fehlt
+  if (!q.question || !q.question.trim()) {
+    push('ERROR', 'E4', id, 'Frage-Text fehlt');
+  }
+
+  // E5: Ungültiger reviewStatus
+  if (q.reviewStatus && !VALID_STATUS.has(q.reviewStatus)) {
+    push('ERROR', 'E5', id, `Ungültiger reviewStatus "${q.reviewStatus}"`);
+  }
+
+  // W1: Keine Quelle mit URL
+  const hasUrl = Array.isArray(q.sources) && q.sources.some(s => s && s.url && s.url.trim());
+  if (!hasUrl) {
+    push('WARN', 'W1', id, 'Keine Quelle mit URL hinterlegt');
+  }
+
+  // W2: Relative Zeitangabe ohne asOfDate
+  const blob = [q.question, q.explanation, q.context].filter(Boolean).join(' ');
+  const rel = findRelativeTime(blob);
+  if (rel && !q.asOfDate) {
+    push('WARN', 'W2', id, `Relative Zeitangabe "${rel}" — bitte asOfDate setzen`);
+  }
+
+  // W3: Leere explanation/context
+  if (!q.explanation || !q.explanation.trim()) {
+    push('WARN', 'W3', id, 'explanation ist leer');
+  }
+  if (!q.context || !q.context.trim()) {
+    push('WARN', 'W3', id, 'context ist leer');
+  }
+
+  // W4: spielbarer Status, aber reviewNote vorhanden (Hinweis übersehen?)
+  if (PLAYABLE_STATUS.has(q.reviewStatus) && q.reviewNote && q.reviewNote.trim()) {
+    // nur informativ — bei "ok-präzisieren" erwartet
+    if (q.reviewStatus === 'ok') {
+      push('WARN', 'W4', id, 'Status "ok" trotz reviewNote — sicher, dass es nicht "ok-präzisieren" ist?');
+    }
+  }
+
+  // I1: relatedQuestions leer
+  if (!Array.isArray(q.relatedQuestions) || q.relatedQuestions.length === 0) {
+    push('INFO', 'I1', id, 'relatedQuestions leer');
+  }
+}
+
+// ---------- Ausgabe ----------
+
+const errors = issues.filter(i => i.severity === 'ERROR');
+const warns  = issues.filter(i => i.severity === 'WARN');
+const infos  = issues.filter(i => i.severity === 'INFO');
+
+console.log(c(C.bold, `\nLint Report — ${questions.length} Fragen`));
+console.log(c(C.dim, '─'.repeat(60)));
+
+function printGroup(label, items, color) {
+  if (items.length === 0) return;
+  console.log(c(color + C.bold, `\n${label} (${items.length})`));
+  const byCode = new Map();
+  for (const i of items) {
+    if (!byCode.has(i.code)) byCode.set(i.code, []);
+    byCode.get(i.code).push(i);
+  }
+  for (const [code, list] of [...byCode.entries()].sort()) {
+    console.log(c(color, `\n  ${code} — ${list.length}×`));
+    for (const i of list.slice(0, 20)) {
+      console.log(`    ${c(C.dim, i.id.padEnd(18))} ${i.msg}`);
+    }
+    if (list.length > 20) {
+      console.log(c(C.dim, `    … und ${list.length - 20} weitere`));
+    }
+  }
+}
+
+printGroup('ERRORS',   errors, C.red);
+printGroup('WARNINGS', warns,  C.yel);
+
+// Infos nur als Summary, nicht im Detail
+if (infos.length) {
+  console.log(c(C.dim, `\nINFO: ${infos.length} (z.B. leere relatedQuestions) — nicht blockierend`));
+}
+
+// Summary
+console.log(c(C.dim, '\n' + '─'.repeat(60)));
+const summary = [
+  errors.length === 0 ? c(C.green, '✓ 0 Errors') : c(C.red, `✗ ${errors.length} Errors`),
+  warns.length === 0  ? c(C.green, '✓ 0 Warnings') : c(C.yel, `⚠ ${warns.length} Warnings`),
+  c(C.dim, `${infos.length} Infos`),
+].join(c(C.dim, '  ·  '));
+console.log(summary);
+
+// Statistik per reviewStatus
+const statusCount = new Map();
+for (const q of questions) {
+  const s = q.reviewStatus ?? '(unset → ok)';
+  statusCount.set(s, (statusCount.get(s) || 0) + 1);
+}
+console.log(c(C.dim, '\nreviewStatus Verteilung:'));
+for (const [s, n] of [...statusCount.entries()].sort((a,b) => b[1]-a[1])) {
+  console.log(c(C.dim, `  ${s.padEnd(18)} ${n}`));
+}
+
+console.log('');
+process.exit(errors.length > 0 ? 1 : 0);

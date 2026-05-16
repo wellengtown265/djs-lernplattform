@@ -1,0 +1,126 @@
+[
+  {
+    "id": "v1.3-import-2026-05-13",
+    "title": "V1.3 Foundation: Bildertest + 202 neue Fragen + DJS-2025-Bereinigung",
+    "date": "2026-05-13",
+    "version": "1.3.0",
+    "changeCount": 226,
+    "summary": "Großer Datenimport vom 13.05.2026.",
+    "details": [
+      "+ 202 neue Fragen (alle Kategorien) als reviewStatus='ungeprüft' importiert",
+      "+ 23 Altfragen mit DJS-2025-Doppelung archiviert (reviewStatus='archiv-djs-alt'; kommen in V1.4 als Rubrik 'Historische DJS-Fragen' zurück)",
+      "+ Neue Kategorie 'Bildertest' mit 10 Runden à 12 Items (120 Items insgesamt)",
+      "+ Neuer Frage-Typ 'kurzantwort' (Freitext)",
+      "+ Bildertest-Bildquellen-Konzept dokumentiert (BILDERTEST_2026_QUELLEN_BILDQUELLEN_FUER_CODE.md)",
+      "+ Bildertest-Historie dokumentiert (BILDERTESTS_ALT_FRAGEN_ANTWORTEN_ANALYSE.md)",
+      "* Bilder sind noch Platzhalter — Lizenzprüfung in nächster Iteration."
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Erstkorrektur nach KORREKTUR_FRAGEN_V1.md",
+    "count": 25,
+    "changes": [
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F114 / djs2025sc001** — Rückkehr Wilmore/Williams auf 18. März 2025 (statt Februar 2025); NASA-Quelle ergänzt. Quelle: https://www.nasa.gov/blogs/spacestation/2025/03/18/dragon-undocks-with-spacex-crew-9-members-for-return-to-earth/"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F29 / djs2025mc001** — Frage mit festem Zeitfenster (Dez 2024–Apr 2025); Vancouver auf Lapu-Lapu-Day-Festival 26.04.2025 korrigiert; Mannheim als Amokfahrt 03.03.2025 präzisiert."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F30 / djs2025mc002** — Antwortschlüssel um „Wokeness“ und „Klimakleber“ erweitert (laut Duden-Pressemitteilung 2024 Neuaufnahmen). Quelle: https://www.duden.de/presse/Der-neue-Duden-ist-da"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F115 / djs2025mc003** — Slack korrekt Salesforce zugeordnet (nicht Microsoft); Zoom als US-Unternehmen präzisiert. Quelle: https://www.salesforce.com/news/press-releases/2021/07/21/slack-acquisition-completed/"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F39 / djs2025sc007** — İmamoğlu-Vorwürfe korrigiert auf Korruption und Terrorismus (vorher fälschlich „Beleidigung Wahlbehörde“)."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F105 / djs2025match002** — Widerspruch „BIP 0,2 Prozent“ vs. „zweites Rezessionsjahr“ aufgelöst; nun als schwache Erholung formuliert."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F4 / djs2025match004** — Brandenburg → SPD-CDU (nach Bruch SPD-BSW Anfang 2026); Sachsen als CDU-SPD-Minderheitsregierung; Hamburg an Bürgerschaftswahl 2025 angepasst; Fragetext erweitert auf „2024/2025 bis Frühjahr 2026“. Quellen: https://www.zdfheute.de/politik/deutschland/brandenburg-spd-cdu-koalitionsvertrag-bsw-100.html , https://www.zdf.de/nachrichten/politik/deutschland/sachsen-koalition-einigung-cdu-spd-100.html , https://de.wikipedia.org/wiki/B%C3%BCrgerschaftswahl_in_Hamburg_2025"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F43 / djs2024sc005** — Korrekte Antwort 80 (Kandidaturankündigung 25.04.2023, Biden Jahrgang 20.11.1942) statt zuvor 81. Quelle: https://www.whitehouse.gov/briefing-room/statements-releases/2023/04/25/statement-from-president-joe-biden-on-his-reelection-campaign/"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F106 / djs2023sc002** — Verurteilung zu 25 Jahren erfolgte März 2024 (nicht 2023); Schuldspruch 2023. Quelle: https://www.justice.gov/archives/opa/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F90 / djs2023mc001** — Widerspruch Pfirsichbäume vs. Sonnenblumen aufgelöst; Erklärung benennt nun beide Van-Gogh-Fälle (Courtauld London Juni 2022 / National Gallery)."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F91 / djs2022sc001** — Emmy-Aussage korrigiert: Squid Game war erste nicht-englischsprachige Serie, die für Outstanding Drama Series nominiert wurde (nicht Gewinnerin); gewann Emmys u. a. für Regie und Hauptdarsteller."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F107 / djs2022sc003** — Jan Marsalek korrekt als Wirecard-Vorstand/COO bezeichnet (nicht Chefbuchhalter)."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F94 / djs2019sc006** — Echo wurde vom Bundesverband Musikindustrie (BVMI) beendet (nicht vom Deutschen Musikrat)."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F8 / djs2025dp001** — Wahlbeteiligung auf 82,5 Prozent korrigiert (statt „rund 84 Prozent“); Parteien im Bundestag korrekt aufgezählt (SPD, CDU, CSU, Grüne, AfD, Linke, SSW; FDP und BSW gescheitert). Quelle: https://www.bundeswahlleiterin.de/bundestagswahlen/2025/ergebnisse/bund-99.html"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F9 / djs2025dp002** — FDP scheiterte an Fünf-Prozent-Hürde (nicht knapp darüber); Linke zog mit 8,8 Prozent ein (nicht nur über Direktmandate); Prozentzahlen 28,5/20,8/16,4/11,6/8,8 ergänzt."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F16 / djs2025dp009** — Falsche 3,5-Prozent-BIP-Behauptung gestrichen; 3,5 Prozent als späteres NATO-Ziel korrekt eingeordnet. Quelle: https://www.bundestag.de/presse/hib/kurzmeldungen-1106068"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F18 / djs2025dp011** — Frage und Erklärung an das BVerwG-Urteil vom 24.06.2025 angepasst (Verbot aufgehoben, nicht bestätigt). Quelle: https://www.bverwg.de/de/pm/2025/48"
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F19 / djs2025dp012** — Erklärung an das aufgehobene COMPACT-Verbot angepasst (BVerwG, 24.06.2025)."
+      },
+      {
+        "category": "Auto-korrigiert (A) — 19 Fragen",
+        "text": "**F66 / djs2025eu011** — Falsche Behauptung „erste Frau in dieser Rolle“ entfernt; Vorgängerinnen Catherine Ashton (2009–2014) und Federica Mogherini (2014–2019) ergänzt."
+      },
+      {
+        "category": "Lint-Ergebnis nach Korrektur",
+        "text": "**0 Errors**"
+      },
+      {
+        "category": "Lint-Ergebnis nach Korrektur",
+        "text": "72 Warnings (51× fehlende URL bei nicht-betroffenen Altfragen, 2× relative Zeitangabe in F47/F118-ähnlichen Fragen, 19× W4 „Status ok trotz reviewNote“ — letzteres ist erwartet, da die Notes die durchgeführten Korrekturen dokumentieren)."
+      },
+      {
+        "category": "Lint-Ergebnis nach Korrektur",
+        "text": "79 Infos (z. B. leere `relatedQuestions`) — nicht blockierend."
+      },
+      {
+        "category": "Offene Fälle / Hinweise",
+        "text": "Keine widersprüchlichen Web-Quellen festgestellt. Alle 19 Korrekturen sind durch offizielle Quellen abgedeckt."
+      },
+      {
+        "category": "Offene Fälle / Hinweise",
+        "text": "Die W4-Warnings des Linters sind erwartet und sollten beim nächsten Reviewsdurchgang ggf. durch ein neues Status-Label wie `ok-korrigiert` ersetzt werden, falls eine Unterscheidung gewünscht ist."
+      },
+      {
+        "category": "Offene Fälle / Hinweise",
+        "text": "F47 (`djs?` Regierungswechsel) und F118 (Mondlandungen 12 Monate) bleiben separate W2-Lint-Warnungen; sie waren nicht Teil der 19 Pflichtfälle."
+      }
+    ]
+  }
+]

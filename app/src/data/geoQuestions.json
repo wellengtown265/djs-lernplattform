@@ -1,0 +1,2508 @@
+{
+  "version": "1.3-beta",
+  "createdAt": "2026-05-13",
+  "totalImported": 93,
+  "playableInV1_3": 71,
+  "note": "map-interactive Fragen sind enthalten, werden aber in V1.3 noch nicht gespielt — UI für Karten folgt in V1.4.",
+  "questions": [
+    {
+      "id": "geo2026_001",
+      "category": "Deutschland: Bundesländer, Wahlen und Regierungsbildung",
+      "prompt": "Markiere die drei ostdeutschen Länder, deren Landtagswahlen 2024 besonders DJS-relevant waren: Brandenburg, Sachsen und Thüringen.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Brandenburg (DE-BB)",
+        "Sachsen (DE-SN)",
+        "Thüringen (DE-TH)"
+      ],
+      "options": [],
+      "correctAnswer": "Die Karte muss Brandenburg, Sachsen und Thüringen markieren; Hamburg darf nicht Teil dieser 2024er-Ost-Landtagswahl-Gruppe sein.",
+      "context": "Innenpolitik ist DJS-Kernstoff; die Korrekturdatei warnt ausdrücklich vor unsauberen Formulierungen zu Ländern und Koalitionen.",
+      "implementationHints": "adminLevel=DE-Bundesland; acceptedFeatureIds=[DE-BB,DE-SN,DE-TH]; noCityStateHamburg=true",
+      "riskFlag": "medium",
+      "sources": [
+        "SRC-CRITICAL",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_002",
+      "category": "Deutschland: Bundesländer, Wahlen und Regierungsbildung",
+      "prompt": "Ordne die Landeshauptstädte zu: Brandenburg, Sachsen, Thüringen, Hamburg.",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Potsdam",
+        "Dresden",
+        "Erfurt",
+        "Hamburg"
+      ],
+      "options": [],
+      "correctAnswer": "Brandenburg → Potsdam; Sachsen → Dresden; Thüringen → Erfurt; Hamburg → Hamburg.",
+      "context": "DJS prüft oft politische Ereignisse über präzise Orts- und Länderzuordnung.",
+      "implementationHints": "matchingPairs; normalize umlauts; Hamburg is both city and Land",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-CRITICAL",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_003",
+      "category": "Deutschland: Bundesländer, Wahlen und Regierungsbildung",
+      "prompt": "Welches Bundesland ist ein Stadtstaat: Brandenburg, Sachsen, Thüringen oder Hamburg?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Hamburg"
+      ],
+      "options": [
+        "Brandenburg",
+        "Sachsen",
+        "Thüringen",
+        "Hamburg"
+      ],
+      "correctAnswer": "Hamburg.",
+      "context": "Die Frage verhindert die im Review markierte Vermischung von Landtagswahl 2024 und Bürgerschaftswahl 2025.",
+      "implementationHints": "singleAnswer=Hamburg",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-CRITICAL",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_004",
+      "category": "Ukrainekrieg: Grenzen, Nachbarländer und Schwarzmeerraum",
+      "prompt": "Markiere die Ukraine auf einer Europakarte nach international anerkanntem Staatsgebiet.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Ukraine (UA)"
+      ],
+      "options": [],
+      "correctAnswer": "Polygon Ukraine/ISO UA. Krim und besetzte Gebiete nicht als russisches Staatsgebiet abfragen; Kontrolle vor Ort ist dynamisch.",
+      "context": "Der Report nennt Ukraine/Kartenwissen als Kernmuster. Konfliktkarten müssen klar zwischen völkerrechtlicher Grenze und Kontrolllinie unterscheiden.",
+      "implementationHints": "mapLayer=sovereignStates; featureId=UA; statusNote=internationallyRecognizedBorders; doNotUseCurrentControlLine=true",
+      "riskFlag": "high",
+      "sources": [
+        "UK-UKR-TOP",
+        "UNHCR-UKR"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_005",
+      "category": "Ukrainekrieg: Grenzen, Nachbarländer und Schwarzmeerraum",
+      "prompt": "Welche Landnachbarn hat die Ukraine?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Ukraine",
+        "Russland",
+        "Belarus",
+        "Polen",
+        "Slowakei",
+        "Ungarn",
+        "Rumänien",
+        "Moldau"
+      ],
+      "options": [
+        "Russland",
+        "Belarus",
+        "Polen",
+        "Slowakei",
+        "Ungarn",
+        "Rumänien",
+        "Moldau",
+        "Bulgarien",
+        "Tschechien"
+      ],
+      "correctAnswer": "Russland, Belarus, Polen, Slowakei, Ungarn, Rumänien und Moldau.",
+      "context": "Nachbarländer sind klassisches DJS-Kartenwissen und für Ukraine-Berichterstattung zentral.",
+      "implementationHints": "multipleAnswers; exactSet=[RU,BY,PL,SK,HU,RO,MD]",
+      "riskFlag": "medium",
+      "sources": [
+        "UK-UKR-TOP",
+        "UNHCR-UKR"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_006",
+      "category": "Ukrainekrieg: Grenzen, Nachbarländer und Schwarzmeerraum",
+      "prompt": "Welche zwei Meere grenzen im Süden an die Ukraine?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Schwarzes Meer",
+        "Asowsches Meer"
+      ],
+      "options": [
+        "Schwarzes Meer",
+        "Asowsches Meer",
+        "Ostsee",
+        "Ägäis",
+        "Adria"
+      ],
+      "correctAnswer": "Schwarzes Meer und Asowsches Meer.",
+      "context": "Die Schwarzmeerregion ist geopolitisch wichtig: Getreideexporte, Häfen, Krim, Marinekrieg.",
+      "implementationHints": "multipleAnswers; exactSet=[BlackSea,SeaOfAzov]",
+      "riskFlag": "medium",
+      "sources": [
+        "UK-UKR-TOP",
+        "CONS-RUS-SANC"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_007",
+      "category": "NATO-Ostflanke: Baltikum, Litauen und Kaliningrad",
+      "prompt": "Markiere Litauen auf der Karte des Baltikums.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Litauen (LT)"
+      ],
+      "options": [],
+      "correctAnswer": "Litauen ist der südlichste der drei baltischen Staaten und grenzt an Lettland, Belarus, Polen und Russland/Kaliningrad.",
+      "context": "Die Bundeswehr-Brigade in Litauen ist laut Report sicherheits- und kartenrelevant.",
+      "implementationHints": "mapLayer=sovereignStates; featureId=LT",
+      "riskFlag": "low",
+      "sources": [
+        "BW-LTU-1",
+        "BW-LTU-2"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_008",
+      "category": "NATO-Ostflanke: Baltikum, Litauen und Kaliningrad",
+      "prompt": "Welche Staaten grenzen an Litauen?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Litauen",
+        "Lettland",
+        "Belarus",
+        "Polen",
+        "Russland/Kaliningrad"
+      ],
+      "options": [
+        "Lettland",
+        "Belarus",
+        "Polen",
+        "Russland",
+        "Estland",
+        "Ukraine",
+        "Finnland"
+      ],
+      "correctAnswer": "Lettland, Belarus, Polen und Russland. Hinweis: Die russische Grenze ist die Grenze zur Exklave Kaliningrad.",
+      "context": "Für die NATO-Ostflanke ist die Lage Litauens zwischen Belarus, Kaliningrad und Polen besonders prüfungsrelevant.",
+      "implementationHints": "multipleAnswers; exactSet=[LV,BY,PL,RU]; labelRU=KaliningradExclave",
+      "riskFlag": "medium",
+      "sources": [
+        "BW-LTU-1",
+        "NATO-MEMBERS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_009",
+      "category": "NATO-Ostflanke: Baltikum, Litauen und Kaliningrad",
+      "prompt": "Markiere die russische Exklave Kaliningrad zwischen Polen und Litauen.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "schwer",
+      "region": "Europa",
+      "locations": [
+        "Kaliningrad Oblast (RU-KGD)",
+        "Polen",
+        "Litauen",
+        "Ostsee"
+      ],
+      "options": [],
+      "correctAnswer": "Kaliningrad Oblast ist russisches Gebiet an der Ostsee, getrennt vom russischen Kernland, zwischen Polen und Litauen.",
+      "context": "Kaliningrad ist für NATO-Ostflanke, Ostsee-Sicherheit und Litauen-Berichterstattung zentral.",
+      "implementationHints": "mapLayer=admin1_or_disputedSubregion; featureId=RU-KGD; notCountry=true",
+      "riskFlag": "medium",
+      "sources": [
+        "NATO-MEMBERS",
+        "BW-LTU-1"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_010",
+      "category": "Gaza, Israel, Palästinensische Gebiete und Nahost",
+      "prompt": "Markiere den Gaza-Streifen – ohne ihn als souveränen Staat zu labeln.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "schwer",
+      "region": "Asien",
+      "locations": [
+        "Gaza Strip",
+        "Israel",
+        "Ägypten",
+        "Mittelmeer"
+      ],
+      "options": [],
+      "correctAnswer": "Der Gaza-Streifen liegt am östlichen Mittelmeer und grenzt an Israel und Ägypten. In der App als Gebiet/occupied Palestinian territory labeln, nicht als normaler Staat.",
+      "context": "Der Report markiert Gaza/Palästina als dynamisches Thema für Journalistensicherheit und humanitäre Lage.",
+      "implementationHints": "mapLayer=territories; featureId=GazaStrip; labelType=territory; avoidStatehoodClaim=true",
+      "riskFlag": "high",
+      "sources": [
+        "OCHA-OPT",
+        "RSF-PAL"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_011",
+      "category": "Gaza, Israel, Palästinensische Gebiete und Nahost",
+      "prompt": "Welche zwei Landgrenzen hat der Gaza-Streifen?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Asien",
+      "locations": [
+        "Gaza",
+        "Israel",
+        "Ägypten"
+      ],
+      "options": [
+        "Israel",
+        "Ägypten",
+        "Jordanien",
+        "Libanon",
+        "Syrien"
+      ],
+      "correctAnswer": "Israel und Ägypten.",
+      "context": "Gaza-Fragen sind politisch sensibel; geografisch lässt sich die Lage am Mittelmeer und an zwei Landgrenzen eindeutig abfragen.",
+      "implementationHints": "multipleAnswers; exactSet=[Israel,Egypt]; doNotIncludeJordan=true",
+      "riskFlag": "high",
+      "sources": [
+        "OCHA-OPT",
+        "WHO-MENA"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_012",
+      "category": "Gaza, Israel, Palästinensische Gebiete und Nahost",
+      "prompt": "Ordne die Orte/Gebiete zu: Gaza-Streifen, Westjordanland, Jerusalem, Rafah.",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "schwer",
+      "region": "Asien",
+      "locations": [
+        "Gaza",
+        "West Bank",
+        "Jerusalem",
+        "Rafah"
+      ],
+      "options": [],
+      "correctAnswer": "Gaza-Streifen → Küstengebiet am Mittelmeer; Westjordanland → Gebiet westlich des Jordan; Jerusalem → Stadt mit international umstrittenem Status; Rafah → Grenzstadt/Grenzübergang im Süden Gazas an Ägypten.",
+      "context": "Journalistische Genauigkeit verlangt hier Gebiet, Stadt und Grenzort strikt zu trennen.",
+      "implementationHints": "matchingPairs; statusNotes=[JerusalemContested,RafahBorderCrossing]; noSovereigntySimplification=true",
+      "riskFlag": "high",
+      "sources": [
+        "OCHA-OPT",
+        "RSF-PAL"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_013",
+      "category": "Sudan: größte humanitäre Krise und Nordostafrika",
+      "prompt": "Markiere Sudan in Nordostafrika.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "leicht",
+      "region": "Afrika",
+      "locations": [
+        "Sudan (SD)"
+      ],
+      "options": [],
+      "correctAnswer": "Sudan liegt südlich von Ägypten, am Roten Meer, zwischen Sahel, Horn von Afrika und Zentralafrika.",
+      "context": "Der Report nennt Sudan als zentrale humanitäre Krise; geografische Lage ist Basiswissen.",
+      "implementationHints": "mapLayer=sovereignStates; featureId=SD",
+      "riskFlag": "low",
+      "sources": [
+        "OCHA-SUDAN",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_014",
+      "category": "Sudan: größte humanitäre Krise und Nordostafrika",
+      "prompt": "Welche Länder grenzen an Sudan?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Afrika",
+      "locations": [
+        "Sudan",
+        "Ägypten",
+        "Libyen",
+        "Tschad",
+        "Zentralafrikanische Republik",
+        "Südsudan",
+        "Äthiopien",
+        "Eritrea"
+      ],
+      "options": [
+        "Ägypten",
+        "Libyen",
+        "Tschad",
+        "Zentralafrikanische Republik",
+        "Südsudan",
+        "Äthiopien",
+        "Eritrea",
+        "Kenia",
+        "Somalia"
+      ],
+      "correctAnswer": "Ägypten, Libyen, Tschad, Zentralafrikanische Republik, Südsudan, Äthiopien und Eritrea.",
+      "context": "Für Fluchtbewegungen, Konfliktausbreitung und Hilfslogistik sind Nachbarstaaten entscheidend.",
+      "implementationHints": "multipleAnswers; exactSet=[EG,LY,TD,CF,SS,ET,ER]",
+      "riskFlag": "medium",
+      "sources": [
+        "OCHA-SUDAN",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_015",
+      "category": "Sudan: größte humanitäre Krise und Nordostafrika",
+      "prompt": "Welche Hauptstadt gehört zu Sudan?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Afrika",
+      "locations": [
+        "Khartum/Khartoum"
+      ],
+      "options": [
+        "Khartum",
+        "Juba",
+        "Asmara",
+        "Addis Abeba"
+      ],
+      "correctAnswer": "Khartum.",
+      "context": "Hauptstädte in Krisenstaaten sind typische DJS-Single-Choice-Basics.",
+      "implementationHints": "singleAnswer=Khartum; accepted=[Khartoum,Khartum]",
+      "riskFlag": "low",
+      "sources": [
+        "OCHA-SUDAN",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_016",
+      "category": "DR Kongo: Große Seen, Ostkongo und M23-Konflikt",
+      "prompt": "Markiere die Demokratische Republik Kongo auf einer Afrikakarte.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "leicht",
+      "region": "Afrika",
+      "locations": [
+        "Demokratische Republik Kongo (CD)"
+      ],
+      "options": [],
+      "correctAnswer": "Die DR Kongo liegt in Zentralafrika; Kinshasa liegt im Westen, die aktuelle Konflikteskalation besonders im Osten.",
+      "context": "Der Report nennt den Ostkongo als unterberichteten Konflikt; geografische Trennung West/Kinshasa und Ost/Kivu ist wichtig.",
+      "implementationHints": "mapLayer=sovereignStates; featureId=CD",
+      "riskFlag": "low",
+      "sources": [
+        "OCHA-DRC",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_017",
+      "category": "DR Kongo: Große Seen, Ostkongo und M23-Konflikt",
+      "prompt": "Welche Staaten liegen direkt östlich bzw. südöstlich der DR Kongo im Gebiet der Großen Seen?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Afrika",
+      "locations": [
+        "Rwanda",
+        "Uganda",
+        "Burundi",
+        "Tansania"
+      ],
+      "options": [
+        "Uganda",
+        "Ruanda",
+        "Burundi",
+        "Tansania",
+        "Ghana",
+        "Senegal",
+        "Namibia"
+      ],
+      "correctAnswer": "Uganda, Ruanda, Burundi und Tansania.",
+      "context": "Die Eskalation in Nord- und Südkivu hat regionale Dimensionen; Nachbarstaaten der Großen Seen müssen sitzen.",
+      "implementationHints": "multipleAnswers; exactSet=[UG,RW,BI,TZ]; includeLakeTanganyikaBorder=true",
+      "riskFlag": "medium",
+      "sources": [
+        "OCHA-DRC",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_018",
+      "category": "DR Kongo: Große Seen, Ostkongo und M23-Konflikt",
+      "prompt": "Ordne die Orte: Kinshasa, Goma, Bukavu, Nord-Kivu.",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "schwer",
+      "region": "Afrika",
+      "locations": [
+        "Kinshasa",
+        "Goma",
+        "Bukavu",
+        "Nord-Kivu"
+      ],
+      "options": [],
+      "correctAnswer": "Kinshasa → Hauptstadt im Westen; Goma → Stadt am Kivusee/Nord-Kivu; Bukavu → Stadt am Kivusee/Süd-Kivu; Nord-Kivu → östliche Konfliktprovinz.",
+      "context": "DJS-relevant, weil Konfliktberichte häufig Stadt, Provinz und Land verwechseln.",
+      "implementationHints": "matchingPairs; adminLevel=city/province/capital",
+      "riskFlag": "low",
+      "sources": [
+        "OCHA-DRC",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_019",
+      "category": "EU-Migrations- und Asylpakt: Außengrenzen und Routen",
+      "prompt": "Markiere die zentralen EU-Mittelmeer-Ankunftsstaaten: Spanien, Italien, Griechenland, Malta und Zypern.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Spanien",
+        "Italien",
+        "Griechenland",
+        "Malta",
+        "Zypern"
+      ],
+      "options": [],
+      "correctAnswer": "Diese Staaten liegen an EU-Außengrenzen im Mittelmeerraum und sind für Asyl-/Migrationspolitik besonders relevant.",
+      "context": "Der EU-Migrationspakt ist laut Report ein A-Thema mit Umsetzungsdatum 2026.",
+      "implementationHints": "mapLayer=EUStates; featureIds=[ES,IT,GR,MT,CY]",
+      "riskFlag": "medium",
+      "sources": [
+        "EU-MIG",
+        "EU-MIG-2026"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_020",
+      "category": "EU-Migrations- und Asylpakt: Außengrenzen und Routen",
+      "prompt": "Ab welchem Datum beginnt die Anwendung des EU-Migrations- und Asylpakts?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Europa",
+      "locations": [
+        "EU"
+      ],
+      "options": [
+        "1. Januar 2026",
+        "12. Juni 2026",
+        "2. August 2026",
+        "1. Januar 2027"
+      ],
+      "correctAnswer": "12. Juni 2026.",
+      "context": "Das ist keine reine Kartenfrage, aber geografisch wichtig für EU-Außengrenzen und nationale Umsetzungslogik.",
+      "implementationHints": "singleAnswer=2026-06-12; validUntil=2026-06-12_or_after_asApplied",
+      "riskFlag": "low",
+      "sources": [
+        "EU-MIG-2026",
+        "EU-MIG"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_021",
+      "category": "EU-Migrations- und Asylpakt: Außengrenzen und Routen",
+      "prompt": "Welche der folgenden Staaten liegen auf der sogenannten Balkanroute in Richtung EU?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa/Asien",
+      "locations": [
+        "Türkei",
+        "Griechenland",
+        "Bulgarien",
+        "Serbien",
+        "Ungarn"
+      ],
+      "options": [
+        "Türkei",
+        "Griechenland",
+        "Bulgarien",
+        "Serbien",
+        "Ungarn",
+        "Libyen",
+        "Marokko"
+      ],
+      "correctAnswer": "Türkei, Griechenland, Bulgarien, Serbien und Ungarn sind plausible Kernstationen je nach Route; Libyen und Marokko gehören nicht zur Balkanroute.",
+      "context": "Migrationsberichterstattung verlangt Routendenken statt bloßes Länderwissen.",
+      "implementationHints": "multipleAnswers; allowRouteVariant=true; exactCore=[TR,GR,BG,RS,HU]",
+      "riskFlag": "medium",
+      "sources": [
+        "EU-MIG",
+        "CONS-SCHENGEN"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_022",
+      "category": "Schengen und EU-Erweiterungsgeografie",
+      "prompt": "Welche zwei EU-Staaten sind seit dem 1. Januar 2025 vollständig Teil des Schengen-Raums?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Bulgarien",
+        "Rumänien"
+      ],
+      "options": [
+        "Bulgarien",
+        "Rumänien",
+        "Kroatien",
+        "Irland",
+        "Serbien"
+      ],
+      "correctAnswer": "Bulgarien und Rumänien.",
+      "context": "DJS-typisch: EU-Status plus Karte. Wichtig ist vollständig inklusive Landgrenzen ab 1. Januar 2025.",
+      "implementationHints": "multipleAnswers; exactSet=[BG,RO]; note=fullSchengenLandBordersFrom2025",
+      "riskFlag": "low",
+      "sources": [
+        "CONS-SCHENGEN",
+        "CONS-BG-RO"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_023",
+      "category": "Schengen und EU-Erweiterungsgeografie",
+      "prompt": "Markiere Bulgarien und Rumänien an der EU-Südostgrenze.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Bulgarien (BG)",
+        "Rumänien (RO)"
+      ],
+      "options": [],
+      "correctAnswer": "Bulgarien liegt südlich von Rumänien am Schwarzen Meer; Rumänien liegt nördlich von Bulgarien ebenfalls am Schwarzen Meer.",
+      "context": "Ergänzt Schengen-Frage um Kartenmodus.",
+      "implementationHints": "mapLayer=EUStates; featureIds=[BG,RO]",
+      "riskFlag": "low",
+      "sources": [
+        "CONS-SCHENGEN",
+        "CONS-BG-RO"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_024",
+      "category": "Schengen und EU-Erweiterungsgeografie",
+      "prompt": "Welches Land führte am 1. Januar 2023 den Euro ein und wurde zugleich Schengen-Mitglied?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Kroatien"
+      ],
+      "options": [
+        "Kroatien",
+        "Bulgarien",
+        "Rumänien",
+        "Serbien"
+      ],
+      "correctAnswer": "Kroatien.",
+      "context": "Alttests fragten Euro-/Schengen-Erweiterung; als Geografiefrage gut mit Adriaraum verknüpfbar.",
+      "implementationHints": "singleAnswer=HR",
+      "riskFlag": "low",
+      "sources": [
+        "CONS-SCHENGEN",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_025",
+      "category": "EU-Institutionen, internationale Gerichte und Diplomatieorte",
+      "prompt": "Ordne die EU-Orte zu: Brüssel, Straßburg, Luxemburg, Frankfurt am Main.",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Brüssel",
+        "Straßburg",
+        "Luxemburg",
+        "Frankfurt"
+      ],
+      "options": [],
+      "correctAnswer": "Brüssel → Kommission/Rat-Zentrum; Straßburg → offizieller Sitz des Europaparlaments; Luxemburg → Gerichtshof der EU; Frankfurt am Main → Europäische Zentralbank.",
+      "context": "DJS fragt Institutionen häufig; geografische Ortszuordnung verhindert Verwechslungen.",
+      "implementationHints": "matchingPairs; allowBrusselsParliamentAsAdditionalButNotSeat=true",
+      "riskFlag": "medium",
+      "sources": [
+        "SRC-REPORT",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_026",
+      "category": "EU-Institutionen, internationale Gerichte und Diplomatieorte",
+      "prompt": "In welcher niederländischen Stadt sitzen sowohl der Internationale Gerichtshof (ICJ) als auch der Internationale Strafgerichtshof (ICC)?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Den Haag",
+        "Niederlande"
+      ],
+      "options": [
+        "Den Haag",
+        "Luxemburg",
+        "Straßburg",
+        "Genf"
+      ],
+      "correctAnswer": "Den Haag.",
+      "context": "ICC/ICJ-Verwechslungen sind prüfungsrelevant; die Ortsfrage ist eine robuste Geografievariante.",
+      "implementationHints": "singleAnswer=TheHague; accepted=[Den Haag,The Hague,'s-Gravenhage]",
+      "riskFlag": "low",
+      "sources": [
+        "ICJ",
+        "ICC"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_027",
+      "category": "EU-Institutionen, internationale Gerichte und Diplomatieorte",
+      "prompt": "Welche vier Städte gehören zu den Hauptstandorten des UN-Systems?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Welt",
+      "locations": [
+        "New York",
+        "Genf",
+        "Wien",
+        "Nairobi"
+      ],
+      "options": [
+        "New York",
+        "Genf",
+        "Wien",
+        "Nairobi",
+        "Brüssel",
+        "Rom",
+        "Paris"
+      ],
+      "correctAnswer": "New York, Genf, Wien und Nairobi.",
+      "context": "UN-Orte sind wiederkehrende DJS-Institutionenbasics und helfen bei WHO, ICC/ICJ und UN-Berichten.",
+      "implementationHints": "multipleAnswers; exactSet=[NewYork,Geneva,Vienna,Nairobi]",
+      "riskFlag": "low",
+      "sources": [
+        "UNOV",
+        "UN-GENEVA"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_028",
+      "category": "CBAM, EU-Handel und Industriegeografie",
+      "prompt": "Wofür steht CBAM geografisch gedacht: an welcher Grenze setzt der Mechanismus an?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa/Welt",
+      "locations": [
+        "EU-Außengrenze"
+      ],
+      "options": [
+        "EU-Außengrenze/Import in die EU",
+        "Grenze zwischen Bundesländern",
+        "Schengen-Binnengrenze",
+        "Grenze zwischen Euro- und Nicht-Eurostaaten"
+      ],
+      "correctAnswer": "An der EU-Außengrenze beziehungsweise beim Import bestimmter CO₂-intensiver Waren in die EU.",
+      "context": "CBAM ist Wirtschafts- und Klimapolitik; für Kartenfragen ist die Außengrenzenlogik entscheidend.",
+      "implementationHints": "singleAnswer=EUExternalImportBorder",
+      "riskFlag": "low",
+      "sources": [
+        "EC-CBAM",
+        "EC-CBAM-2026"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_029",
+      "category": "CBAM, EU-Handel und Industriegeografie",
+      "prompt": "Welche der folgenden Warenbereiche gehören zum typischen CBAM-Kontext?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa/Welt",
+      "locations": [
+        "Zement",
+        "Eisen/Stahl",
+        "Aluminium",
+        "Düngemittel",
+        "Strom",
+        "Wasserstoff"
+      ],
+      "options": [
+        "Zement",
+        "Eisen/Stahl",
+        "Aluminium",
+        "Düngemittel",
+        "Strom",
+        "Wasserstoff",
+        "Bananen",
+        "Textilien"
+      ],
+      "correctAnswer": "Zement, Eisen und Stahl, Aluminium, Düngemittel, Strom und Wasserstoff.",
+      "context": "CBAM-Fragen lassen sich später mit Industriekarten und Importströmen kombinieren.",
+      "implementationHints": "multipleAnswers; exactSet=[cement,ironSteel,aluminium,fertilisers,electricity,hydrogen]",
+      "riskFlag": "low",
+      "sources": [
+        "EC-CBAM",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_030",
+      "category": "CBAM, EU-Handel und Industriegeografie",
+      "prompt": "Markiere den Ruhrraum als klassische deutsche Industrie- und Transformationsregion.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Ruhrgebiet",
+        "Nordrhein-Westfalen",
+        "Deutschland"
+      ],
+      "options": [],
+      "correctAnswer": "Das Ruhrgebiet liegt in Nordrhein-Westfalen, grob zwischen Duisburg, Essen, Bochum und Dortmund.",
+      "context": "Für Wirtschaft/Industriefragen ist räumliches Strukturwissen in Deutschland sinnvoll, auch wenn exakte Grenzen regional variieren.",
+      "implementationHints": "mapLayer=regionApprox; acceptedBoundingBox=RuhrArea; fuzzyMapValidation=true",
+      "riskFlag": "medium",
+      "sources": [
+        "SRC-REPORT",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_031",
+      "category": "COP30, Amazonas und Brasilien",
+      "prompt": "In welcher Stadt fand die UN-Klimakonferenz COP30 statt?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Amerika",
+      "locations": [
+        "Belém",
+        "Brasilien"
+      ],
+      "options": [
+        "Belém",
+        "Bogotá",
+        "Nairobi",
+        "Jakarta"
+      ],
+      "correctAnswer": "Belém.",
+      "context": "COP30 war laut Fragensammlung ein DJS-relevantes Klimathema; die Stadt liegt im Amazonasraum.",
+      "implementationHints": "singleAnswer=Belem; accepted=[Belém,Belem]",
+      "riskFlag": "low",
+      "sources": [
+        "UNFCCC-COP30",
+        "UN-COP30"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_032",
+      "category": "COP30, Amazonas und Brasilien",
+      "prompt": "Markiere Belém im Norden Brasiliens nahe der Amazonasmündung.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Amerika",
+      "locations": [
+        "Belém",
+        "Pará",
+        "Brasilien"
+      ],
+      "options": [],
+      "correctAnswer": "Belém liegt im Bundesstaat Pará im Norden Brasiliens, nahe der Mündung des Amazonas in den Atlantik.",
+      "context": "Kartenfrage zur COP30: Stadt, Bundesstaat und Amazonasraum verbinden.",
+      "implementationHints": "mapLayer=cityPoints; point=Belem_PA_Brazil; toleranceKm=80",
+      "riskFlag": "low",
+      "sources": [
+        "UNFCCC-COP30",
+        "UN-COP30"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_033",
+      "category": "COP30, Amazonas und Brasilien",
+      "prompt": "Welche Hauptstadt gehört zu Brasilien?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Amerika",
+      "locations": [
+        "Brasília",
+        "Brasilien"
+      ],
+      "options": [
+        "Brasília",
+        "Rio de Janeiro",
+        "São Paulo",
+        "Belém"
+      ],
+      "correctAnswer": "Brasília. Nicht Rio de Janeiro und nicht São Paulo.",
+      "context": "Bei Brasilien/COP30 droht die Verwechslung zwischen Hauptstadt, größter Stadt und Konferenzort.",
+      "implementationHints": "singleAnswer=Brasilia; note=BelemIsCOP30HostNotCapital",
+      "riskFlag": "low",
+      "sources": [
+        "UNFCCC-COP30",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_034",
+      "category": "Klima Europa: Mittelmeer, Alpen, Arktis und Fennoskandien",
+      "prompt": "Welche europäische Großregion wird in Klima- und Hitzeberichten besonders mit Hitzewellen verbunden?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Mittelmeerraum/Südeuropa"
+      ],
+      "options": [
+        "Mittelmeerraum/Südeuropa",
+        "Benelux",
+        "Baltikum",
+        "Irland"
+      ],
+      "correctAnswer": "Der Mittelmeerraum beziehungsweise Südeuropa.",
+      "context": "Der Report nennt europäische Hitze- und Extremereignisse; die Region ist kartografisch gut abfragbar.",
+      "implementationHints": "singleAnswer=MediterraneanEurope",
+      "riskFlag": "low",
+      "sources": [
+        "WMO-EUROPE-2025",
+        "WMO-GLOBAL-2025"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_035",
+      "category": "Klima Europa: Mittelmeer, Alpen, Arktis und Fennoskandien",
+      "prompt": "Welche Länder gehören in der engen Kartenlogik zu Fennoskandien?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Europa",
+      "locations": [
+        "Norwegen",
+        "Schweden",
+        "Finnland; teils auch Kola/Karelien in Russland"
+      ],
+      "options": [
+        "Norwegen",
+        "Schweden",
+        "Finnland",
+        "Teile Nordwestrusslands",
+        "Spanien",
+        "Griechenland"
+      ],
+      "correctAnswer": "Norwegen, Schweden und Finnland; geologisch/geografisch werden Teile Nordwestrusslands oft mitgezählt.",
+      "context": "Schwer, aber nützlich für Klima- und Arktisberichterstattung. Als MC Russland nur mit Statushinweis akzeptieren.",
+      "implementationHints": "multipleAnswers; exactCore=[NO,SE,FI]; optionalContext=[NW_Russia]; scoring=corePlusContext",
+      "riskFlag": "medium",
+      "sources": [
+        "WMO-EUROPE-2025",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_036",
+      "category": "Klima Europa: Mittelmeer, Alpen, Arktis und Fennoskandien",
+      "prompt": "Markiere die Alpen als europäische Hochgebirgsregion.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Alpenraum: Frankreich",
+        "Monaco",
+        "Italien",
+        "Schweiz",
+        "Liechtenstein",
+        "Österreich",
+        "Deutschland",
+        "Slowenien"
+      ],
+      "options": [],
+      "correctAnswer": "Die Alpen verlaufen bogenförmig von Südostfrankreich über Schweiz/Italien/Österreich bis Slowenien; Monaco und Liechtenstein liegen im Alpenraum-Kontext.",
+      "context": "Gletscher, Hitze, Starkregen und Tourismus machen den Alpenraum DJS-relevant.",
+      "implementationHints": "mapLayer=mountainRange; featureId=Alps; acceptRangePolygon=true",
+      "riskFlag": "low",
+      "sources": [
+        "WMO-EUROPE-2025",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_037",
+      "category": "Energie, Stromnetze und Resilienz",
+      "prompt": "Welche zwei Länder waren vom großflächigen Stromausfall am 28. April 2025 hauptsächlich betroffen?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Spanien",
+        "Portugal"
+      ],
+      "options": [
+        "Spanien",
+        "Portugal",
+        "Deutschland",
+        "Österreich",
+        "Italien"
+      ],
+      "correctAnswer": "Spanien und Portugal.",
+      "context": "Der Blackout ist eine geografisch klare Resilienzfrage zur Iberischen Halbinsel.",
+      "implementationHints": "multipleAnswers; exactSet=[ES,PT]",
+      "riskFlag": "low",
+      "sources": [
+        "ENTSOE-BLACKOUT",
+        "ACER-BLACKOUT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_038",
+      "category": "Energie, Stromnetze und Resilienz",
+      "prompt": "Markiere die Iberische Halbinsel.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Iberische Halbinsel: Spanien",
+        "Portugal",
+        "Andorra",
+        "Gibraltar; kleiner Randbezug zu Südwestfrankreich"
+      ],
+      "options": [],
+      "correctAnswer": "Für Quizvalidierung mindestens Spanien und Portugal markieren; Andorra/Gibraltar optional je nach Kartenlayer.",
+      "context": "Die Halbinsel ist der räumliche Kontext des Blackouts.",
+      "implementationHints": "mapLayer=region; required=[ES,PT]; optional=[AD,GI]; tolerance=peninsulaPolygon",
+      "riskFlag": "medium",
+      "sources": [
+        "ENTSOE-BLACKOUT",
+        "ACER-BLACKOUT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_039",
+      "category": "Energie, Stromnetze und Resilienz",
+      "prompt": "Welche Meerenge verbindet den Atlantik mit dem Mittelmeer südlich der Iberischen Halbinsel?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa/Afrika",
+      "locations": [
+        "Straße von Gibraltar"
+      ],
+      "options": [
+        "Straße von Gibraltar",
+        "Bosporus",
+        "Suezkanal",
+        "Bab al-Mandab"
+      ],
+      "correctAnswer": "Die Straße von Gibraltar.",
+      "context": "Für Energie-, Handels- und Migrationsrouten ist die Meerenge zwischen Spanien/Gibraltar und Marokko zentral.",
+      "implementationHints": "singleAnswer=StraitOfGibraltar",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-REPORT",
+        "CONS-SCHENGEN"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_040",
+      "category": "Digitalisierung, EU-Digitalstaat und Regulierungsorte",
+      "prompt": "Welche Stadt ist der wichtigste EU-Politikort für AI Act, Data Act und EUDI Wallet?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Brüssel"
+      ],
+      "options": [
+        "Brüssel",
+        "Oslo",
+        "Lissabon",
+        "Dublin"
+      ],
+      "correctAnswer": "Brüssel.",
+      "context": "Digitalregulierung ist laut Report ein A-Thema; geografisch ist Brüssel als EU-Regulierungszentrum relevant.",
+      "implementationHints": "singleAnswer=Brussels",
+      "riskFlag": "low",
+      "sources": [
+        "EC-AI",
+        "EC-DATA",
+        "EC-EUDI"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_041",
+      "category": "Digitalisierung, EU-Digitalstaat und Regulierungsorte",
+      "prompt": "Ordne die Digitalthemen dem Raum zu: ePA, EUDI Wallet, AI Act, Data Act.",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Deutschland",
+        "Europäische Union"
+      ],
+      "options": [],
+      "correctAnswer": "ePA → Deutschland; EUDI Wallet → Europäische Union; AI Act → Europäische Union; Data Act → Europäische Union.",
+      "context": "Hilft später bei App-Filtern: nationaler Rollout versus EU-Regelwerk.",
+      "implementationHints": "matchingPairs; geoScopeField=[DE/EU]",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-REPORT",
+        "EC-AI",
+        "EC-DATA",
+        "EC-EUDI"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_042",
+      "category": "Digitalisierung, EU-Digitalstaat und Regulierungsorte",
+      "prompt": "Markiere Deutschland als Land des ePA-Rollouts.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Deutschland (DE)"
+      ],
+      "options": [],
+      "correctAnswer": "Deutschland markieren; die ePA ist ein deutsches Digitalisierungsprojekt im Gesundheitswesen.",
+      "context": "DJS-relevant, weil ePA als aktuelles Innenpolitik-/Digitalthema auftaucht.",
+      "implementationHints": "mapLayer=sovereignStates; featureId=DE",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-REPORT",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_043",
+      "category": "WHO, Pandemieabkommen und globale Gesundheitsorte",
+      "prompt": "In welcher Stadt hat die Weltgesundheitsorganisation WHO ihren Sitz?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Genf",
+        "Schweiz"
+      ],
+      "options": [
+        "Genf",
+        "Wien",
+        "Rom",
+        "Den Haag"
+      ],
+      "correctAnswer": "Genf.",
+      "context": "Das WHO-Pandemieabkommen ist laut Report A/B-relevant; Genf ist der zentrale Ort für globale Gesundheitspolitik.",
+      "implementationHints": "singleAnswer=Geneva; accepted=[Genf,Geneva]",
+      "riskFlag": "low",
+      "sources": [
+        "WHO-PAN",
+        "UN-GENEVA"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_044",
+      "category": "WHO, Pandemieabkommen und globale Gesundheitsorte",
+      "prompt": "In welchem Land liegt Genf?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Schweiz"
+      ],
+      "options": [
+        "Schweiz",
+        "Frankreich",
+        "Belgien",
+        "Österreich"
+      ],
+      "correctAnswer": "Schweiz.",
+      "context": "Basisgeografie für WHO, UNHCR, ILO und viele internationale Organisationen.",
+      "implementationHints": "singleAnswer=CH",
+      "riskFlag": "low",
+      "sources": [
+        "UN-GENEVA",
+        "WHO-PAN"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_045",
+      "category": "WHO, Pandemieabkommen und globale Gesundheitsorte",
+      "prompt": "Welche Organisation gehört nicht primär zu Genf: WHO, UNHCR, ILO oder ICC?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "ICC → Den Haag"
+      ],
+      "options": [
+        "WHO",
+        "UNHCR",
+        "ILO",
+        "ICC"
+      ],
+      "correctAnswer": "ICC. Der Internationale Strafgerichtshof sitzt in Den Haag; WHO, UNHCR und ILO sind stark mit Genf verbunden.",
+      "context": "Verhindert typische Verwechslungen internationaler Organisationen und Orte.",
+      "implementationHints": "singleAnswer=ICC",
+      "riskFlag": "low",
+      "sources": [
+        "UN-GENEVA",
+        "ICC"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_046",
+      "category": "BRICS, Globaler Süden und neue Mitglieder",
+      "prompt": "Welche dieser Staaten gehören zu den afrikanischen BRICS-Mitgliedern im erweiterten BRICS-Kontext?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Afrika/Asien/Amerika",
+      "locations": [
+        "Südafrika",
+        "Ägypten",
+        "Äthiopien"
+      ],
+      "options": [
+        "Südafrika",
+        "Ägypten",
+        "Äthiopien",
+        "Nigeria",
+        "Kenia",
+        "Marokko"
+      ],
+      "correctAnswer": "Südafrika, Ägypten und Äthiopien.",
+      "context": "BRICS ist geopolitisch DJS-relevant; die geografische Verteilung zeigt Süd-Süd-Politik.",
+      "implementationHints": "multipleAnswers; exactSet=[ZA,EG,ET]; note=NigeriaPartnerNotFullMemberAsOfSources",
+      "riskFlag": "medium",
+      "sources": [
+        "BRICS-2026",
+        "BRICS-BR"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_047",
+      "category": "BRICS, Globaler Süden und neue Mitglieder",
+      "prompt": "Markiere die ursprünglichen BRICS-Staaten auf der Weltkarte.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Welt",
+      "locations": [
+        "Brasilien",
+        "Russland",
+        "Indien",
+        "China",
+        "Südafrika"
+      ],
+      "options": [],
+      "correctAnswer": "Brasilien, Russland, Indien, China und Südafrika.",
+      "context": "Klassische geopolitische Kartengruppe; gute Weltkartenfrage.",
+      "implementationHints": "mapLayer=sovereignStates; featureIds=[BR,RU,IN,CN,ZA]",
+      "riskFlag": "low",
+      "sources": [
+        "BRICS-2026",
+        "BRICS-BR"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_048",
+      "category": "BRICS, Globaler Süden und neue Mitglieder",
+      "prompt": "Welches südostasiatische Land wird in aktuellen BRICS-Quellen als Mitglied ab 2025 geführt?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Asien",
+      "locations": [
+        "Indonesien"
+      ],
+      "options": [
+        "Indonesien",
+        "Thailand",
+        "Vietnam",
+        "Malaysia"
+      ],
+      "correctAnswer": "Indonesien.",
+      "context": "Aktualitätsfrage; nur mit festem Quellenstand verwenden.",
+      "implementationHints": "singleAnswer=ID; asOf=2026-05-13",
+      "riskFlag": "medium",
+      "sources": [
+        "BRICS-2026",
+        "BRICS-BR"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_049",
+      "category": "USA, Nordamerika und Handelspolitik",
+      "prompt": "Welche zwei Staaten haben eine Landgrenze mit den USA?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Amerika",
+      "locations": [
+        "Kanada",
+        "Mexiko"
+      ],
+      "options": [
+        "Kanada",
+        "Mexiko",
+        "Kuba",
+        "Panama",
+        "Brasilien"
+      ],
+      "correctAnswer": "Kanada und Mexiko.",
+      "context": "Bei US-Zoll-, Grenz- und Migrationsthemen ist Basisgeografie Nordamerikas Pflicht.",
+      "implementationHints": "multipleAnswers; exactSet=[CA,MX]",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_050",
+      "category": "USA, Nordamerika und Handelspolitik",
+      "prompt": "Markiere die US-mexikanische Grenze.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Amerika",
+      "locations": [
+        "USA",
+        "Mexiko"
+      ],
+      "options": [],
+      "correctAnswer": "Grenzlinie zwischen USA und Mexiko von Kalifornien/Baja California bis Texas/Tamaulipas markieren.",
+      "context": "Relevant für Trump-Grenzpolitik, Migration und Zoll-/Handelsthemen.",
+      "implementationHints": "mapLayer=internationalBoundaries; featurePair=[US,MX]; toleranceLineKm=50",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_051",
+      "category": "USA, Nordamerika und Handelspolitik",
+      "prompt": "Welche drei Länder bilden das USMCA-Handelsgebiet?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Amerika",
+      "locations": [
+        "USA",
+        "Mexiko",
+        "Kanada"
+      ],
+      "options": [
+        "USA",
+        "Mexiko",
+        "Kanada",
+        "Brasilien",
+        "Argentinien"
+      ],
+      "correctAnswer": "USA, Mexiko und Kanada.",
+      "context": "Handelspolitik-Fragen lassen sich stabil als Nordamerika-Geografie üben.",
+      "implementationHints": "multipleAnswers; exactSet=[US,MX,CA]",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-REPORT",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_052",
+      "category": "Vatikan, Rom und katholische Weltgeografie",
+      "prompt": "Markiere den Vatikanstaat innerhalb von Rom.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Vatikanstadt",
+        "Rom",
+        "Italien"
+      ],
+      "options": [],
+      "correctAnswer": "Vatikanstadt ist ein eigener Staat, vollständig von Italien/Rom umgeben.",
+      "context": "Papstwechsel 2025 ist DJS-relevant; geografisch sollte Vatikan ≠ Italien sauber modelliert werden.",
+      "implementationHints": "mapLayer=microstates; featureId=VA; nestedIn=Rome; countryNotItaly=true",
+      "riskFlag": "low",
+      "sources": [
+        "VATICAN-FRANCIS",
+        "VATICAN-LEO"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_053",
+      "category": "Vatikan, Rom und katholische Weltgeografie",
+      "prompt": "Welcher Staat umschließt den Vatikan vollständig?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Italien"
+      ],
+      "options": [
+        "Italien",
+        "San Marino",
+        "Frankreich",
+        "Schweiz"
+      ],
+      "correctAnswer": "Italien.",
+      "context": "Basisfrage zum kleinsten Staat und Papstberichterstattung.",
+      "implementationHints": "singleAnswer=IT",
+      "riskFlag": "low",
+      "sources": [
+        "VATICAN-FRANCIS",
+        "VATICAN-LEO"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_054",
+      "category": "Vatikan, Rom und katholische Weltgeografie",
+      "prompt": "In welcher Stadt Argentiniens wurde Papst Franziskus geboren?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Amerika",
+      "locations": [
+        "Buenos Aires",
+        "Argentinien"
+      ],
+      "options": [
+        "Buenos Aires",
+        "Lima",
+        "Santiago de Chile",
+        "Montevideo"
+      ],
+      "correctAnswer": "Buenos Aires.",
+      "context": "Verbindet Personenwissen mit Geografie: Franziskus war der erste Papst aus Lateinamerika.",
+      "implementationHints": "singleAnswer=BuenosAires",
+      "riskFlag": "low",
+      "sources": [
+        "VATICAN-FRANCIS",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_055",
+      "category": "Indien, China und Demografie Asien",
+      "prompt": "Welches Land gilt seit 2023 als bevölkerungsreichstes Land der Welt?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Asien",
+      "locations": [
+        "Indien"
+      ],
+      "options": [
+        "China",
+        "Indien",
+        "USA",
+        "Indonesien"
+      ],
+      "correctAnswer": "Indien.",
+      "context": "DJS-Altteststoff und aktuelles Weltgeografie-Basiswissen.",
+      "implementationHints": "singleAnswer=IN",
+      "riskFlag": "low",
+      "sources": [
+        "UN-DESA-INDIA",
+        "UN-DESA-INDIA2"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_056",
+      "category": "Indien, China und Demografie Asien",
+      "prompt": "Markiere Indien und China auf einer Asienkarte.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "leicht",
+      "region": "Asien",
+      "locations": [
+        "Indien (IN)",
+        "China (CN)"
+      ],
+      "options": [],
+      "correctAnswer": "Beide Länder markieren; keine Grenzlinie im Himalaya abfragen, da Teile des Grenzverlaufs politisch strittig sind.",
+      "context": "Geografie zur Demografie und Weltmachtverschiebung.",
+      "implementationHints": "mapLayer=sovereignStates; featureIds=[IN,CN]; avoidDisputedBoundaryLine=true",
+      "riskFlag": "medium",
+      "sources": [
+        "UN-DESA-INDIA",
+        "UN-DESA-INDIA2"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_057",
+      "category": "Indien, China und Demografie Asien",
+      "prompt": "Welche Hauptstädte gehören zu Indien und China?",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "leicht",
+      "region": "Asien",
+      "locations": [
+        "Indien",
+        "China",
+        "Neu-Delhi",
+        "Peking/Beijing"
+      ],
+      "options": [],
+      "correctAnswer": "Indien → Neu-Delhi; China → Peking/Beijing.",
+      "context": "Robustes Hauptstadtwissen ohne dynamische Politikfalle.",
+      "implementationHints": "matchingPairs; accepted=[Neu-Delhi,New Delhi,Peking,Beijing]",
+      "riskFlag": "low",
+      "sources": [
+        "UN-DESA-INDIA",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_058",
+      "category": "Südkorea und Türkei: Demokratiekrisen als Kartenwissen",
+      "prompt": "In welchem Land liegt Seoul?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Asien",
+      "locations": [
+        "Südkorea"
+      ],
+      "options": [
+        "Südkorea",
+        "Japan",
+        "China",
+        "Thailand"
+      ],
+      "correctAnswer": "Südkorea.",
+      "context": "Südkorea war im Report über Kriegsrecht/Neuwahlen und im Alttest über Itaewon relevant.",
+      "implementationHints": "singleAnswer=KR",
+      "riskFlag": "low",
+      "sources": [
+        "CARNEGIE-KOREA",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_059",
+      "category": "Südkorea und Türkei: Demokratiekrisen als Kartenwissen",
+      "prompt": "Welche Stadt ist die größte Stadt der Türkei und war 2025 wegen der Verhaftung ihres Bürgermeisters DJS-relevant?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Asien/Europa",
+      "locations": [
+        "Istanbul"
+      ],
+      "options": [
+        "Istanbul",
+        "Ankara",
+        "Izmir",
+        "Bursa"
+      ],
+      "correctAnswer": "Istanbul.",
+      "context": "Wichtig: Istanbul ist größte Stadt, Ankara ist Hauptstadt.",
+      "implementationHints": "singleAnswer=Istanbul",
+      "riskFlag": "low",
+      "sources": [
+        "HRW-IMAMOGLU",
+        "PACE-IMAMOGLU"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_060",
+      "category": "Südkorea und Türkei: Demokratiekrisen als Kartenwissen",
+      "prompt": "Ordne die Hauptstädte zu: Türkei und Südkorea.",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "leicht",
+      "region": "Asien/Europa",
+      "locations": [
+        "Türkei",
+        "Südkorea",
+        "Ankara",
+        "Seoul"
+      ],
+      "options": [],
+      "correctAnswer": "Türkei → Ankara; Südkorea → Seoul.",
+      "context": "Verhindert die typische Istanbul/Ankara-Verwechslung und festigt Asienkartenwissen.",
+      "implementationHints": "matchingPairs",
+      "riskFlag": "low",
+      "sources": [
+        "HRW-IMAMOGLU",
+        "CARNEGIE-KOREA"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_061",
+      "category": "Island, Reykjanes und Naturgefahren",
+      "prompt": "In welchem Land liegt die Blaue Lagune, die wegen Erdbeben-/Vulkanaktivität zeitweise geschlossen wurde?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Island"
+      ],
+      "options": [
+        "Island",
+        "Neuseeland",
+        "Japan",
+        "Türkei"
+      ],
+      "correctAnswer": "Island.",
+      "context": "Alttest-Geografiefrage zu Naturgefahren; der Kontext bleibt prüfungsrelevant.",
+      "implementationHints": "singleAnswer=IS",
+      "riskFlag": "low",
+      "sources": [
+        "ICELAND-GOV",
+        "SMITH-REYK"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_062",
+      "category": "Island, Reykjanes und Naturgefahren",
+      "prompt": "Markiere die Reykjanes-Halbinsel im Südwesten Islands.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "schwer",
+      "region": "Europa",
+      "locations": [
+        "Reykjanes Peninsula",
+        "Island"
+      ],
+      "options": [],
+      "correctAnswer": "Reykjanes liegt im Südwesten Islands, nahe Keflavík/Grindavík und der Blauen Lagune.",
+      "context": "Gute schwere Kartenfrage, weil sie nicht nur das Land, sondern eine Naturgefahrenregion abfragt.",
+      "implementationHints": "mapLayer=regionalPolygon; featureId=Reykjanes; toleranceKm=40",
+      "riskFlag": "low",
+      "sources": [
+        "ICELAND-GOV",
+        "SMITH-REYK"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_063",
+      "category": "Island, Reykjanes und Naturgefahren",
+      "prompt": "Welche zwei tektonischen Platten driften in Island auseinander?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa/Atlantik",
+      "locations": [
+        "Nordamerikanische Platte",
+        "Eurasische Platte"
+      ],
+      "options": [
+        "Nordamerikanische Platte",
+        "Eurasische Platte",
+        "Afrikanische Platte",
+        "Arabische Platte"
+      ],
+      "correctAnswer": "Nordamerikanische und Eurasische Platte.",
+      "context": "Geografische Besonderheit Islands: Mittelatlantischer Rücken, Vulkanismus, Erdbeben.",
+      "implementationHints": "multipleAnswers; exactSet=[NorthAmericanPlate,EurasianPlate]",
+      "riskFlag": "low",
+      "sources": [
+        "ICELAND-GOV",
+        "SMITH-REYK"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_064",
+      "category": "Kanada-Waldbrände und transnationale Klimafolgen",
+      "prompt": "Waldbrände in welchem Land lösten 2023 Smog-Alarm bis nach New York aus?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Amerika",
+      "locations": [
+        "Kanada"
+      ],
+      "options": [
+        "Australien",
+        "Kanada",
+        "Brasilien",
+        "USA"
+      ],
+      "correctAnswer": "Kanada.",
+      "context": "Originalnaher DJS-Geografiestoff; zeigt, dass Klimaereignisse grenzüberschreitend wirken.",
+      "implementationHints": "singleAnswer=CA",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "WMO-GLOBAL-2025"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_065",
+      "category": "Kanada-Waldbrände und transnationale Klimafolgen",
+      "prompt": "Markiere Kanada und New York City, um die Transportstrecke des Rauchs zu visualisieren.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "mittel",
+      "region": "Amerika",
+      "locations": [
+        "Kanada",
+        "New York City",
+        "USA"
+      ],
+      "options": [],
+      "correctAnswer": "Kanada als Ursprungsland und New York City im Nordosten der USA markieren; keine exakte Rauchwolke nötig.",
+      "context": "Gut für interaktive Karten: Ereignisland plus betroffener Ort.",
+      "implementationHints": "mapLayer=countryAndCity; requiredCountry=CA; requiredCity=NewYorkCity; noSmokeTrajectoryScoring=true",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "WMO-GLOBAL-2025"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_066",
+      "category": "Kanada-Waldbrände und transnationale Klimafolgen",
+      "prompt": "Welche US-Stadt wurde 2023 besonders sichtbar durch den orangefarbenen Himmel infolge kanadischer Waldbrandrauchwolken?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Amerika",
+      "locations": [
+        "New York City"
+      ],
+      "options": [
+        "New York City",
+        "Los Angeles",
+        "Miami",
+        "Seattle"
+      ],
+      "correctAnswer": "New York City.",
+      "context": "Medienbildstarkes Klimaereignis und typische DJS-Verknüpfung von Ereignis und Ort.",
+      "implementationHints": "singleAnswer=NewYorkCity",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "WMO-GLOBAL-2025"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_067",
+      "category": "Lateinamerika: Ecuador, El Salvador und Brasilien",
+      "prompt": "In welchem Land wurde 2023 ein Präsidentschaftskandidat bei einer Wahlveranstaltung in Quito erschossen?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Amerika",
+      "locations": [
+        "Ecuador"
+      ],
+      "options": [
+        "Mexiko",
+        "Kolumbien",
+        "Ecuador",
+        "Peru"
+      ],
+      "correctAnswer": "Ecuador.",
+      "context": "Altteststoff; geografisch wichtig: Quito ist Hauptstadt Ecuadors, nicht Mexikos oder Kolumbiens.",
+      "implementationHints": "singleAnswer=EC",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_068",
+      "category": "Lateinamerika: Ecuador, El Salvador und Brasilien",
+      "prompt": "Welches Land führte 2021 Bitcoin als gesetzliches Zahlungsmittel ein?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Amerika",
+      "locations": [
+        "El Salvador"
+      ],
+      "options": [
+        "Panama",
+        "El Salvador",
+        "Honduras",
+        "Mexiko"
+      ],
+      "correctAnswer": "El Salvador.",
+      "context": "DJS-Altteststoff mit klarer Zentralamerika-Verortung.",
+      "implementationHints": "singleAnswer=SV",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_069",
+      "category": "Lateinamerika: Ecuador, El Salvador und Brasilien",
+      "prompt": "Ordne die Hauptstädte zu: Ecuador, El Salvador, Brasilien.",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "mittel",
+      "region": "Amerika",
+      "locations": [
+        "Quito",
+        "San Salvador",
+        "Brasília"
+      ],
+      "options": [],
+      "correctAnswer": "Ecuador → Quito; El Salvador → San Salvador; Brasilien → Brasília.",
+      "context": "Verdichtet drei DJS-nahe Lateinamerika-Themen in einem Hauptstadt-Matching.",
+      "implementationHints": "matchingPairs; accepted=[Quito,San Salvador,Brasília,Brasilia]",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "UNFCCC-COP30"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_070",
+      "category": "Japan, Hiroshima und Nagasaki",
+      "prompt": "In welchen japanischen Städten wurden 2025 die 80. Jahrestage der Atombombenabwürfe begangen?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Asien",
+      "locations": [
+        "Hiroshima",
+        "Nagasaki"
+      ],
+      "options": [
+        "Hiroshima",
+        "Nagasaki",
+        "Tokio",
+        "Osaka"
+      ],
+      "correctAnswer": "Hiroshima und Nagasaki.",
+      "context": "Geschichte/Jahrestage sind DJS-relevant; geografisch eindeutige Städtefrage.",
+      "implementationHints": "multipleAnswers; exactSet=[Hiroshima,Nagasaki]",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_071",
+      "category": "Japan, Hiroshima und Nagasaki",
+      "prompt": "Auf welcher japanischen Hauptinsel liegt Hiroshima?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Asien",
+      "locations": [
+        "Honshū/Honshu"
+      ],
+      "options": [
+        "Honshū",
+        "Kyūshū",
+        "Hokkaidō",
+        "Shikoku"
+      ],
+      "correctAnswer": "Honshū.",
+      "context": "Schwere Geografievariante für Kandidat:innen, die über bloße Städtenamen hinausgehen.",
+      "implementationHints": "singleAnswer=Honshu; accepted=[Honshū,Honshu]",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_072",
+      "category": "Japan, Hiroshima und Nagasaki",
+      "prompt": "Auf welcher japanischen Hauptinsel liegt Nagasaki?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Asien",
+      "locations": [
+        "Kyūshū/Kyushu"
+      ],
+      "options": [
+        "Kyūshū",
+        "Honshū",
+        "Hokkaidō",
+        "Shikoku"
+      ],
+      "correctAnswer": "Kyūshū.",
+      "context": "Ergänzt Hiroshima/Honshū und verhindert reine Auswendiglernfrage.",
+      "implementationHints": "singleAnswer=Kyushu; accepted=[Kyūshū,Kyushu]",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_073",
+      "category": "Ozeanien und Pazifik: Klimarisiken und Inselstaaten",
+      "prompt": "Welche dieser Staaten sind pazifische Inselstaaten beziehungsweise SIDS im Pazifik?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Ozeanien",
+      "locations": [
+        "Fidschi",
+        "Kiribati",
+        "Tuvalu",
+        "Samoa"
+      ],
+      "options": [
+        "Fidschi",
+        "Kiribati",
+        "Tuvalu",
+        "Samoa",
+        "Malta",
+        "Island"
+      ],
+      "correctAnswer": "Fidschi, Kiribati, Tuvalu und Samoa.",
+      "context": "Ozeanien muss im Fragenset abgedeckt sein; Klimarisiken kleiner Inselstaaten sind DJS-nah über Klima/Resilienz.",
+      "implementationHints": "multipleAnswers; exactSet=[FJ,KI,TV,WS]",
+      "riskFlag": "low",
+      "sources": [
+        "UN-OHRLLS-SIDS",
+        "WORLD-BANK-PACIFIC"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_074",
+      "category": "Ozeanien und Pazifik: Klimarisiken und Inselstaaten",
+      "prompt": "Markiere Tuvalu im zentralen Pazifik.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "schwer",
+      "region": "Ozeanien",
+      "locations": [
+        "Tuvalu"
+      ],
+      "options": [],
+      "correctAnswer": "Tuvalu ist ein sehr kleiner pazifischer Inselstaat; Kartenvalidierung sollte großzügige Toleranz um den Inselstaat erlauben.",
+      "context": "Klimawandel/Meeresspiegelanstieg: robuste Ozeanien-Kartenfrage mit hoher DJS-Nähe.",
+      "implementationHints": "mapLayer=islandStates; featureId=TV; toleranceKm=250; zoomHint=Pacific",
+      "riskFlag": "medium",
+      "sources": [
+        "UN-OHRLLS-SIDS",
+        "WORLD-BANK-PACIFIC"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_075",
+      "category": "Ozeanien und Pazifik: Klimarisiken und Inselstaaten",
+      "prompt": "Welche Hauptstadt gehört zu Neuseeland?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Ozeanien",
+      "locations": [
+        "Wellington"
+      ],
+      "options": [
+        "Wellington",
+        "Auckland",
+        "Sydney",
+        "Canberra"
+      ],
+      "correctAnswer": "Wellington.",
+      "context": "Solides Ozeanien-Basiswissen; Auckland ist größte Stadt, aber nicht Hauptstadt.",
+      "implementationHints": "singleAnswer=Wellington",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-REPORT",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_076",
+      "category": "Sportereignisse und Austragungsorte",
+      "prompt": "Welche Stadt war Gastgeberin der Olympischen Sommerspiele 2024?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Paris",
+        "Frankreich"
+      ],
+      "options": [
+        "Paris",
+        "Los Angeles",
+        "Tokio",
+        "Brisbane"
+      ],
+      "correctAnswer": "Paris.",
+      "context": "Sport/Fototest ist laut Report ein Backlog-Thema; Austragungsorte sind typische DJS-Fragen.",
+      "implementationHints": "singleAnswer=Paris",
+      "riskFlag": "low",
+      "sources": [
+        "IOC-PARIS-LA",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_077",
+      "category": "Sportereignisse und Austragungsorte",
+      "prompt": "Welche zwei Orte bilden den Namen der Olympischen Winterspiele 2026?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Milano/Mailand und Cortina d’Ampezzo",
+        "Italien"
+      ],
+      "options": [
+        "Milano/Mailand",
+        "Cortina d’Ampezzo",
+        "Turin",
+        "Innsbruck",
+        "Oslo"
+      ],
+      "correctAnswer": "Milano/Mailand und Cortina d’Ampezzo.",
+      "context": "Sportereignis plus Norditalien-Geografie.",
+      "implementationHints": "multipleAnswers; exactSet=[Milan,Cortina]; accepted=[Milano,Mailand,Milan,Cortina d'Ampezzo]",
+      "riskFlag": "low",
+      "sources": [
+        "IOC-MILANO",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_078",
+      "category": "Sportereignisse und Austragungsorte",
+      "prompt": "Welche australische Stadt ist Gastgeberin der Olympischen Sommerspiele 2032?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Ozeanien",
+      "locations": [
+        "Brisbane",
+        "Australien"
+      ],
+      "options": [
+        "Brisbane",
+        "Sydney",
+        "Melbourne",
+        "Perth"
+      ],
+      "correctAnswer": "Brisbane.",
+      "context": "Deckt Ozeanien über ein Sportthema ab und ist langfristig stabil.",
+      "implementationHints": "singleAnswer=Brisbane",
+      "riskFlag": "low",
+      "sources": [
+        "IOC-BRISBANE",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_079",
+      "category": "Kultur, Restitution und koloniale Geografie",
+      "prompt": "An welches heutige Land gab Deutschland Benin-Bronzen zurück?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Afrika",
+      "locations": [
+        "Nigeria"
+      ],
+      "options": [
+        "Nigeria",
+        "Ghana",
+        "Kamerun",
+        "Äthiopien"
+      ],
+      "correctAnswer": "Nigeria.",
+      "context": "DJS-Altteststoff: Wichtig ist die Unterscheidung zwischen dem historischen Königreich Benin und dem heutigen Staat Benin.",
+      "implementationHints": "singleAnswer=NG",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_080",
+      "category": "Kultur, Restitution und koloniale Geografie",
+      "prompt": "Markiere Nigeria in Westafrika.",
+      "type": "map-interactive",
+      "mappedType": "map-geo",
+      "difficulty": "leicht",
+      "region": "Afrika",
+      "locations": [
+        "Nigeria (NG)"
+      ],
+      "options": [],
+      "correctAnswer": "Nigeria liegt in Westafrika am Golf von Guinea; Abuja ist Hauptstadt, Lagos größte Stadt.",
+      "context": "Restitutionsdebatten sind Kultur/Politik, aber geografische Einordnung ist prüfungsrelevant.",
+      "implementationHints": "mapLayer=sovereignStates; featureId=NG",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_081",
+      "category": "Kultur, Restitution und koloniale Geografie",
+      "prompt": "Was ist geografisch korrekt zum historischen Königreich Benin?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Afrika",
+      "locations": [
+        "Es lag überwiegend im heutigen Nigeria",
+        "nicht im heutigen Staat Benin."
+      ],
+      "options": [
+        "Es lag überwiegend im heutigen Nigeria",
+        "Es war identisch mit dem heutigen Staat Benin",
+        "Es lag in Äthiopien",
+        "Es lag in Südafrika"
+      ],
+      "correctAnswer": "Das historische Königreich Benin lag im Gebiet des heutigen südlichen Nigeria; der heutige Staat Benin ist etwas anderes.",
+      "context": "Schwere Genauigkeitsfrage gegen eine sehr häufige Fehlannahme.",
+      "implementationHints": "singleAnswer=HistoricalBeninInModernNigeria",
+      "riskFlag": "medium",
+      "sources": [
+        "SRC-QUESTIONS",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_082",
+      "category": "Medienfreiheit, Desinformation und Orte der Berichterstattung",
+      "prompt": "Welche Konfliktregion ist im Report als zentrales Thema der Journalistensicherheit genannt?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Asien",
+      "locations": [
+        "Palästina/Gaza"
+      ],
+      "options": [
+        "Palästina/Gaza",
+        "Island",
+        "Luxemburg",
+        "Neuseeland"
+      ],
+      "correctAnswer": "Palästina/Gaza.",
+      "context": "Reporter ohne Grenzen und OCHA werden im Report als Quellenkontext für Journalistensicherheit und humanitäre Lage geführt.",
+      "implementationHints": "singleAnswer=PalestineGaza; label=conflictRegionNotState",
+      "riskFlag": "high",
+      "sources": [
+        "RSF-PAL",
+        "OCHA-OPT",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_083",
+      "category": "Medienfreiheit, Desinformation und Orte der Berichterstattung",
+      "prompt": "In welcher Stadt sitzen viele UN- und Menschenrechtsorganisationen, die für internationale Berichterstattung wichtig sind?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Genf"
+      ],
+      "options": [
+        "Genf",
+        "Kopenhagen",
+        "Dublin",
+        "Warschau"
+      ],
+      "correctAnswer": "Genf.",
+      "context": "Medien-/Menschenrechtsberichte werden häufig über UN-Organisationen in Genf gerahmt.",
+      "implementationHints": "singleAnswer=Geneva",
+      "riskFlag": "low",
+      "sources": [
+        "UN-GENEVA",
+        "WHO-PAN"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_084",
+      "category": "Medienfreiheit, Desinformation und Orte der Berichterstattung",
+      "prompt": "Ordne Institution und Ort zu: RSF, ICJ, WHO, EU-Kommission.",
+      "type": "matching",
+      "mappedType": "matching-geo",
+      "difficulty": "schwer",
+      "region": "Europa/Welt",
+      "locations": [
+        "Paris",
+        "Den Haag",
+        "Genf",
+        "Brüssel"
+      ],
+      "options": [],
+      "correctAnswer": "RSF → Paris; ICJ → Den Haag; WHO → Genf; EU-Kommission → Brüssel.",
+      "context": "Verbindet Medienfreiheit, Recht, Gesundheit und EU-Politik mit Orten.",
+      "implementationHints": "matchingPairs; accepted=[Reporter ohne Grenzen/Paris]",
+      "riskFlag": "low",
+      "sources": [
+        "RSF-PAL",
+        "ICJ",
+        "WHO-PAN",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_085",
+      "category": "Aktive Konflikte: sichere Kartenlogik und Statusfallen",
+      "prompt": "Welche dieser Kartenfragen ist für eine DJS-App am sichersten formuliert?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Welt",
+      "locations": [
+        "Ukraine/Gaza/Westbank/Crimea"
+      ],
+      "options": [
+        "Markiere die Ukraine nach international anerkanntem Staatsgebiet",
+        "Markiere die aktuell russisch kontrollierten Gebiete ohne Datum",
+        "Markiere Palästina als normalen souveränen Staat ohne Hinweis",
+        "Markiere Saudi-Arabien als BRICS-Gründungsmitglied"
+      ],
+      "correctAnswer": "„Markiere die Ukraine nach international anerkanntem Staatsgebiet“ ist sicherer als „Markiere die aktuell russisch kontrollierten Gebiete“.",
+      "context": "Der Report verlangt bei Konflikten `as_of_date`, Quellenumfang und dynamischen Prüfstatus. Diese Meta-Frage schützt vor falscher Implementierung.",
+      "implementationHints": "singleAnswer=InternationallyRecognizedUkraine; metaQuestion=true",
+      "riskFlag": "high",
+      "sources": [
+        "SRC-REPORT",
+        "SRC-CRITICAL"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_086",
+      "category": "Aktive Konflikte: sichere Kartenlogik und Statusfallen",
+      "prompt": "Welche Zusatzangabe ist bei Kartenfragen zu aktiven Kriegen zwingend?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "mittel",
+      "region": "Welt",
+      "locations": [
+        "as_of_date/last_checked/source_scope"
+      ],
+      "options": [
+        "as_of_date/last_checked/source_scope",
+        "nur ein Emoji",
+        "nur Hauptstadt",
+        "keine Quelle"
+      ],
+      "correctAnswer": "Ein Stichtag beziehungsweise `as_of_date`, `last_checked` und Quellenumfang.",
+      "context": "Direkt aus der Reportlogik: dynamische Konflikte dürfen nicht zeitlos gespeichert werden.",
+      "implementationHints": "singleAnswer=asOfDateLastCheckedSourceScope; metaQuestion=true",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-REPORT",
+        "SRC-CRITICAL"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_087",
+      "category": "Aktive Konflikte: sichere Kartenlogik und Statusfallen",
+      "prompt": "Welche Antwort vermeidet eine Statusfalle bei Gaza?",
+      "type": "multiple-choice",
+      "mappedType": "multiplechoice-geo",
+      "difficulty": "schwer",
+      "region": "Asien",
+      "locations": [
+        "Gaza als Gebiet/occupied Palestinian territory labeln"
+      ],
+      "options": [
+        "Gaza als Gebiet/occupied Palestinian territory labeln",
+        "Gaza als EU-Staat labeln",
+        "Gaza als Hauptstadt Israels labeln",
+        "Gaza ohne Kontext als souveränen Staat labeln"
+      ],
+      "correctAnswer": "Gaza als Gebiet beziehungsweise besetztes palästinensisches Gebiet labeln und nicht als normaler souveräner Staat behandeln.",
+      "context": "Notwendig, damit der spätere Karten-Code keine politisch falschen Staatspolygone erzeugt.",
+      "implementationHints": "singleAnswer=TerritoryLabel; metaQuestion=true",
+      "riskFlag": "high",
+      "sources": [
+        "OCHA-OPT",
+        "RSF-PAL",
+        "SRC-REPORT"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_088",
+      "category": "Text-Input-Sprint: Hauptstädte und präzise Ortsnamen",
+      "prompt": "Nenne die Hauptstadt der Ukraine.",
+      "type": "text-input",
+      "mappedType": "kurzantwort-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Ukraine",
+        "Kyjiw/Kiew"
+      ],
+      "options": [],
+      "correctAnswer": "Kyjiw/Kiew.",
+      "context": "Hauptstadtwissen zu einem DJS-Kernkonflikt; Schreibvarianten müssen akzeptiert werden.",
+      "implementationHints": "acceptedText=[Kyjiw,Kiew,Kyiv,Kiev]; caseInsensitive=true",
+      "riskFlag": "medium",
+      "sources": [
+        "UK-UKR-TOP",
+        "UNHCR-UKR"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_089",
+      "category": "Text-Input-Sprint: Hauptstädte und präzise Ortsnamen",
+      "prompt": "Nenne die Hauptstadt Litauens.",
+      "type": "text-input",
+      "mappedType": "kurzantwort-geo",
+      "difficulty": "leicht",
+      "region": "Europa",
+      "locations": [
+        "Litauen",
+        "Vilnius"
+      ],
+      "options": [],
+      "correctAnswer": "Vilnius.",
+      "context": "Relevant zur Brigade Litauen und NATO-Ostflanke.",
+      "implementationHints": "acceptedText=[Vilnius,Wilna]; caseInsensitive=true",
+      "riskFlag": "low",
+      "sources": [
+        "BW-LTU-1",
+        "BW-LTU-2"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_090",
+      "category": "Text-Input-Sprint: Hauptstädte und präzise Ortsnamen",
+      "prompt": "Nenne die Hauptstadt Sudans.",
+      "type": "text-input",
+      "mappedType": "kurzantwort-geo",
+      "difficulty": "mittel",
+      "region": "Afrika",
+      "locations": [
+        "Sudan",
+        "Khartum/Khartoum"
+      ],
+      "options": [],
+      "correctAnswer": "Khartum/Khartoum.",
+      "context": "Humanitäre Krise plus Hauptstadtwissen.",
+      "implementationHints": "acceptedText=[Khartum,Khartoum]; caseInsensitive=true",
+      "riskFlag": "low",
+      "sources": [
+        "OCHA-SUDAN",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_091",
+      "category": "Text-Input-Sprint: Hauptstädte und präzise Ortsnamen",
+      "prompt": "Nenne die Hauptstadt Brasiliens.",
+      "type": "text-input",
+      "mappedType": "kurzantwort-geo",
+      "difficulty": "leicht",
+      "region": "Amerika",
+      "locations": [
+        "Brasilien",
+        "Brasília"
+      ],
+      "options": [],
+      "correctAnswer": "Brasília.",
+      "context": "Verhindert Verwechslung mit Rio de Janeiro, São Paulo oder Belém/COP30.",
+      "implementationHints": "acceptedText=[Brasília,Brasilia]; caseInsensitive=true",
+      "riskFlag": "low",
+      "sources": [
+        "UNFCCC-COP30",
+        "SRC-QUESTIONS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_092",
+      "category": "Text-Input-Sprint: Hauptstädte und präzise Ortsnamen",
+      "prompt": "Nenne die Hauptstadt Neuseelands.",
+      "type": "text-input",
+      "mappedType": "kurzantwort-geo",
+      "difficulty": "leicht",
+      "region": "Ozeanien",
+      "locations": [
+        "Neuseeland",
+        "Wellington"
+      ],
+      "options": [],
+      "correctAnswer": "Wellington.",
+      "context": "Ozeanien-Basiswissen; Auckland ist die größte Stadt, aber nicht Hauptstadt.",
+      "implementationHints": "acceptedText=[Wellington]; caseInsensitive=true",
+      "riskFlag": "low",
+      "sources": [
+        "SRC-REPORT",
+        "DJS"
+      ],
+      "asOfDate": "2026-05-13"
+    },
+    {
+      "id": "geo2026_093",
+      "category": "Text-Input-Sprint: Hauptstädte und präzise Ortsnamen",
+      "prompt": "Nenne die Stadt, in der sowohl ICJ als auch ICC sitzen.",
+      "type": "text-input",
+      "mappedType": "kurzantwort-geo",
+      "difficulty": "mittel",
+      "region": "Europa",
+      "locations": [
+        "Den Haag",
+        "Niederlande"
+      ],
+      "options": [],
+      "correctAnswer": "Den Haag/The Hague.",
+      "context": "Internationale Gerichtsbarkeit ist DJS-relevant; Ortswissen statt reines Abkürzungswissen.",
+      "implementationHints": "acceptedText=[Den Haag,The Hague,'s-Gravenhage,s-Gravenhage]; caseInsensitive=true",
+      "riskFlag": "low",
+      "sources": [
+        "ICJ",
+        "ICC"
+      ],
+      "asOfDate": "2026-05-13"
+    }
+  ]
+}
