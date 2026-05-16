@@ -1,0 +1,13 @@
+node_modules/
+app/dist/
+app/*.bak.*
+app/src/data/*.bak.*
+*.DS_Store
+.env
+*.log
+app/.claude/
+BEAT_THE_AI_NOTES.json
+fetch_bildertest_images.py
+fetch_images_v2.py
+fetch_images_v3.py
+/tmp/
