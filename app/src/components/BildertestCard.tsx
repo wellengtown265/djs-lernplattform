@@ -13,6 +13,7 @@ import { useState, useMemo } from 'react';
 import type { BildertestItem } from '../types-bildertest';
 import type { BildertestSelfRating } from '../hooks/useBildertestState';
 import type { Difficulty } from '../types';
+import BeatTheAI from './BeatTheAI';
 
 interface Props {
   item: BildertestItem;
@@ -466,6 +467,11 @@ export function BildertestCard({
             )}
 
             {/* Quellen */}
+            {/* Beat the AI — kontextuell */}
+            <div style={{ display:'flex', justifyContent:'flex-end', paddingTop: 4 }}>
+              <BeatTheAI variant="inline" page="bildertest" questionId={item.id} questionText={item.prompt} />
+            </div>
+
             {item.sources?.length > 0 && (
               <div style={{ fontSize: 11, color: '#475569' }}>
                 <p style={{ margin: '0 0 2px', textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: 10 }}>Quellen:</p>

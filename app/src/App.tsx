@@ -12,6 +12,7 @@ import DJSQuiz from './pages/DJSQuiz';
 import { BildertestMode } from './pages/BildertestMode';
 import GeoQuiz from './pages/GeoQuiz';
 import Fokus2026 from './pages/Fokus2026';
+import BeatTheAI from './components/BeatTheAI';
 import ProfileSelect from './pages/ProfileSelect';
 import type { Page } from './types';
 import questionsData from './data/questions.json';
@@ -148,6 +149,10 @@ export default function App() {
   return (
     <>
       {showIntro && <IntroScreen onEnter={() => setShowIntro(false)} />}
+      {/* Beat the AI — globaler Float-Button (erscheint wenn Intro weg) */}
+      {!showIntro && profiles.active && (
+        <BeatTheAI variant="float" page={page} />
+      )}
       <div
         style={{
           minHeight: '100vh',
