@@ -122,5 +122,24 @@
         "text": "F47 (`djs?` Regierungswechsel) und F118 (Mondlandungen 12 Monate) bleiben separate W2-Lint-Warnungen; sie waren nicht Teil der 19 Pflichtfälle."
       }
     ]
+  },
+  {
+    "id": "v1.4-qa-pass-2026-05-18",
+    "title": "V1.4 QA-Pass — alle 286 ungeprüften Fragen finalisiert",
+    "date": "2026-05-18",
+    "version": "1.4.0",
+    "changeCount": 286,
+    "summary": "Vollständiger Quellen-Pass: 0 ungeprüfte Fragen, 97% URL-Coverage.",
+    "details": [
+      "✓ 84 unique 2026-Fragen → ok (waren bereits doppelt verifiziert mit URLs)",
+      "✓ 126 Varianten von 63 Basisfragen mit URL → ok-präzisieren (Quellen+Kontext geerbt)",
+      "✓ 76 Varianten von 38 Basisfragen ohne URL → ok-präzisieren (URLs nachrecherchiert)",
+      "✓ 38 alte Basisfragen 2018-2024 bekamen Primär+Sekundärquellen-URLs",
+      "✓ URL-Coverage: 180/410 (44%) → 397/410 (97%)",
+      "✓ 0 Fragen mehr im ungeprüft-Status (vorher: 286)",
+      "✓ 8 Landing-Page-URLs durch spezifische Artikel-URLs ersetzt (Booker, Imamoglu, Yoon, Pelicot, ...)",
+      "* Quellenkonzept: jede Frage mindestens 1 Primärquelle (Institution) + 1 Sekundärquelle aus Ebene-2-Medienliste",
+      "* WebSearch-Verifikation: 5 URLs korrigiert (NetzDG redirect, Bundestag-slug, ECB-Vorab-PM, Unwort-IDs, El Salvador Bitcoin-Decree)"
+    ]
   }
 ]
