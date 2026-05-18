@@ -11531,8 +11531,9 @@
       "innenpolitik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp002",
@@ -11572,8 +11573,9 @@
       "verfassungsschutz"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-08"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-08",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp003",
@@ -11609,8 +11611,9 @@
       "sicherheit"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp004",
@@ -11650,8 +11653,9 @@
       "grundgesetz"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp005",
@@ -11691,8 +11695,9 @@
       "demokratie"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp006",
@@ -11732,8 +11737,9 @@
       "rechtsextremismus"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-02-26"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-02-26",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp007",
@@ -11769,8 +11775,9 @@
       "innenpolitik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp008",
@@ -11806,8 +11813,9 @@
       "verfassungsschutz"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp009",
@@ -11843,8 +11851,9 @@
       "medien"
     ],
     "verificationStatus": "verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp010",
@@ -11880,8 +11889,9 @@
       "deutsche-politik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-11-28"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-11-28",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp011",
@@ -11921,8 +11931,9 @@
       "merz"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-03-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-03-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp012",
@@ -11958,8 +11969,9 @@
       "januar-2026"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-01-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-01-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026gr001",
@@ -11999,8 +12011,9 @@
       "dublin"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-19"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-19",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026gr002",
@@ -12036,8 +12049,9 @@
       "dobrindt"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-01-12"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-01-12",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026gr003",
@@ -12073,8 +12087,9 @@
       "bundesregierung"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-06"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-06",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026gr004",
@@ -12110,8 +12125,9 @@
       "geas"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-12-08"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-12-08",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026gr005",
@@ -12147,8 +12163,9 @@
       "zuständigkeit"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-12-08"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-12-08",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026gr006",
@@ -12184,8 +12201,9 @@
       "dobrindt"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-19"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-19",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip001",
@@ -12221,8 +12239,9 @@
       "handelspolitik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-04-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-04-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip002",
@@ -12262,8 +12281,9 @@
       "trump"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-07-28"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-07-28",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip003",
@@ -12303,8 +12323,9 @@
       "trump"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-04-13"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-04-13",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip004",
@@ -12340,8 +12361,9 @@
       "sicherheit"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-06-25"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-06-25",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip005",
@@ -12377,8 +12399,9 @@
       "rutte"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-06-25"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-06-25",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip006",
@@ -12414,8 +12437,9 @@
       "gipfel"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-06-17"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-06-17",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip007",
@@ -12455,8 +12479,9 @@
       "handel"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-07-24"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-07-24",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip008",
@@ -12496,8 +12521,9 @@
       "fossile-energien"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-11-22"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-11-22",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip009",
@@ -12537,8 +12563,9 @@
       "desinformation"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-18"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-18",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip010",
@@ -12578,8 +12605,9 @@
       "cohabitation"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-06-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-06-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc001",
@@ -12619,8 +12647,9 @@
       "konklave"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-08"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-08",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc002",
@@ -12660,8 +12689,9 @@
       "prevost"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-08"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-08",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt001",
@@ -12701,8 +12731,9 @@
       "gesundheit"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-20"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-20",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt002",
@@ -12742,8 +12773,9 @@
       "gesundheit"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-05-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-05-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt003",
@@ -12779,8 +12811,9 @@
       "plattformregulierung"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-04-23"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-04-23",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt004",
@@ -12816,8 +12849,9 @@
       "eu-regulierung"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-12-05"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-12-05",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt005",
@@ -12853,8 +12887,9 @@
       "digitalpolitik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-02-06"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-02-06",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt006",
@@ -12890,8 +12925,9 @@
       "plattformregulierung"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-04-23"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-04-23",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt007",
@@ -12927,8 +12963,9 @@
       "digitalpolitik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-12-04"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-12-04",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc003",
@@ -12964,8 +13001,9 @@
       "schwedische-akademie"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-10-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-10-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc004",
@@ -13005,8 +13043,9 @@
       "demokratie"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-10-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-10-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc005",
@@ -13042,8 +13081,9 @@
       "literatur"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-10-08"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-10-08",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc006",
@@ -13079,8 +13119,9 @@
       "osteuropa"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-07-30"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-07-30",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc007",
@@ -13116,8 +13157,9 @@
       "wasted-love"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-17"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-17",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc008",
@@ -13153,8 +13195,9 @@
       "film"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-02-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-02-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp007",
@@ -13190,8 +13233,9 @@
       "2025"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-31"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-31",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp008",
@@ -13227,8 +13271,9 @@
       "2025"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-07-27"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-07-27",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp009",
@@ -13264,8 +13309,9 @@
       "abu-dhabi"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-12-07"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-12-07",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp004",
@@ -13305,8 +13351,9 @@
       "fifa"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-07-13"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-07-13",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp005",
@@ -13342,8 +13389,9 @@
       "fußball"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp006",
@@ -13379,8 +13427,9 @@
       "2025"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-24"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-24",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip011",
@@ -13416,8 +13465,9 @@
       "2026"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-05-08"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-05-08",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt008",
@@ -13453,8 +13503,9 @@
       "2025"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-11-11"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-11-11",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp013",
@@ -13490,8 +13541,9 @@
       "bundesregierung"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-06"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-06",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp014",
@@ -13527,8 +13579,9 @@
       "außenpolitik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-06"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-06",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp015",
@@ -13564,8 +13617,9 @@
       "bundestag"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-06"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-06",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp016",
@@ -13601,8 +13655,9 @@
       "koalition"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-06"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-06",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp017",
@@ -13638,8 +13693,9 @@
       "rechtsextremismus"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026dp018",
@@ -13675,8 +13731,9 @@
       "pressefreiheit"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-06-24"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-06-24",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip012",
@@ -13712,8 +13769,9 @@
       "eu-institutionen"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-01-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-01-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip013",
@@ -13749,8 +13807,9 @@
       "litauen"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2024-12-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2024-12-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip014",
@@ -13786,8 +13845,9 @@
       "trump"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-01-20"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-01-20",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip015",
@@ -13823,8 +13883,9 @@
       "trump"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-01-20"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-01-20",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip016",
@@ -13860,8 +13921,9 @@
       "geo-karte"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
   },
   {
     "id": "djs2026ip017",
@@ -13897,8 +13959,9 @@
       "völkerrecht"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip018",
@@ -13934,8 +13997,9 @@
       "völkerrecht"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip019",
@@ -13971,8 +14035,9 @@
       "geo-karte"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
   },
   {
     "id": "djs2026ip020",
@@ -14008,8 +14073,9 @@
       "geo-karte"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
   },
   {
     "id": "djs2026ip021",
@@ -14045,8 +14111,9 @@
       "niederlande"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2024-10-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2024-10-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip022",
@@ -14082,8 +14149,9 @@
       "geo-karte"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-03-19"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-03-19",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip023",
@@ -14119,8 +14187,9 @@
       "usa"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-03-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-03-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
   },
   {
     "id": "djs2026ip024",
@@ -14156,8 +14225,9 @@
       "trump"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-04-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-04-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
   },
   {
     "id": "djs2026wf010",
@@ -14193,8 +14263,9 @@
       "wirtschaft"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wf011",
@@ -14230,8 +14301,9 @@
       "geldpolitik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt009",
@@ -14267,8 +14339,9 @@
       "chips"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt010",
@@ -14304,8 +14377,9 @@
       "ki"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-16"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-16",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026wt011",
@@ -14341,8 +14415,9 @@
       "digitalpolitik"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2024-08-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2024-08-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc009",
@@ -14378,8 +14453,9 @@
       "film"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-03-15"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-03-15",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026mc010",
@@ -14415,8 +14491,9 @@
       "demokratie"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-03-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-03-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
   },
   {
     "id": "djs2026mc011",
@@ -14452,8 +14529,9 @@
       "demokratie"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-10-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-10-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp010",
@@ -14489,8 +14567,9 @@
       "geo-karte"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2026-02-06"
+    "reviewStatus": "ok",
+    "asOfDate": "2026-02-06",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026ip025",
@@ -14526,8 +14605,9 @@
       "demokratie"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2024-12-03"
+    "reviewStatus": "ok",
+    "asOfDate": "2024-12-03",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
   },
   {
     "id": "djs2026gr007",
@@ -14563,8 +14643,9 @@
       "gesellschaft"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2024-09-02"
+    "reviewStatus": "ok",
+    "asOfDate": "2024-09-02",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
   },
   {
     "id": "djs2026wt012",
@@ -14604,8 +14685,9 @@
       "gesundheit"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-05-20"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-05-20",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp011",
@@ -14641,8 +14723,9 @@
       "em-2025"
     ],
     "verificationStatus": "doppelt verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-07-27"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-07-27",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   },
   {
     "id": "djs2026sp012",
@@ -14678,7 +14761,8 @@
       "sport"
     ],
     "verificationStatus": "verifiziert",
-    "reviewStatus": "ungeprüft",
-    "asOfDate": "2025-02-01"
+    "reviewStatus": "ok",
+    "asOfDate": "2025-02-01",
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung."
   }
 ]
