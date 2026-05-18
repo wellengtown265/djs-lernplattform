@@ -168,7 +168,7 @@ export default function IntroScreen({ onEnter }: Props) {
         </div>
 
         {/* ═══════════════════════════════════════
-            LEARN HARD ★ WIBE CODE — Haupttitel
+            LEARN HARD ★ VIBE CODE — Haupttitel
         ═══════════════════════════════════════ */}
         <div style={{
           opacity: visible && !leaving ? 1 : 0,
@@ -199,7 +199,7 @@ export default function IntroScreen({ onEnter }: Props) {
             ★
           </div>
 
-          {/* WIBE CODE */}
+          {/* VIBE CODE */}
           <div style={{
             fontFamily: pixelFont,
             fontSize: 'clamp(16px, 5vw, 28px)',
@@ -208,12 +208,12 @@ export default function IntroScreen({ onEnter }: Props) {
             lineHeight: 1.4,
             textShadow: '3px 3px 0 rgba(200,25,26,0.4), 0 0 30px rgba(200,25,26,0.3)',
           }}>
-            WIBE CODE
+            VIBE CODE
           </div>
         </div>
 
         {/* ═══════════════════════════════════════
-            PIXEL ART — WIBE CODER ILLUSTRATION
+            PIXEL ART — VIBE CODER ILLUSTRATION
         ═══════════════════════════════════════ */}
         <div style={{
           opacity: visible && !leaving ? 1 : 0,
@@ -246,7 +246,7 @@ export default function IntroScreen({ onEnter }: Props) {
               <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#555' }} />
               <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#555' }} />
               <span style={{ fontSize: 7, color: '#333', marginLeft: 4, fontFamily: pixelFont }}>
-                wibe_terminal v2.6
+                vibe_terminal v2.6
               </span>
             </div>
 

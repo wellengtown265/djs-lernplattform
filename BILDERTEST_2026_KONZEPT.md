@@ -12,7 +12,7 @@
 - Der echte DJS-Zeitraum ist rund Ende Juni 2025 bis Ende Juni 2026. Da heute 2026-05-13 ist, braucht die App kurz vor Prüfung noch einen Juni-Update-Durchlauf.
 - Einige absolute Kernthemen wie Merz-Kanzlerwahl liegen knapp vor dem strengen 12-Monatsfenster, bleiben aber wegen Amts-/Kontextrelevanz als Kandidaten enthalten.
 
-## Einfache Bildstrategie für Wibe-Coding
+## Einfache Bildstrategie für Vibe-Coding
 
 1. In der App zunächst nur Platzhalter und `image.searchQueries` nutzen.
 2. Bilder manuell oder später per kleinem Script aus Wikimedia Commons/official media suchen.
