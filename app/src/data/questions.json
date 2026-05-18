@@ -15408,8 +15408,12 @@
     "context": "Selenskyjs Hintergrund als Schauspieler ist nicht nur anekdotisch: Er nutzt Kommunikation und Auftreten meisterhaft für die Kriegsdiplomatie. Seine täglichen Videoansprachen wurden zu einem politischen Werkzeug. Für DJS-Kandidat:innen: Ukraine-Karte, Selenskyj-Biografie und aktuelle Diplomatie sind Pflichtthemen.",
     "sources": [
       {
-        "title": "Reuters: Ukraine war coverage",
-        "url": "https://www.reuters.com/world/ukraine/"
+        "title": "Wikipedia (DE): Wolodymyr Selenskyj — Karriere als Komiker, Studio Kvartal 95, Serie 'Diener des Volkes' (2015)",
+        "url": "https://de.wikipedia.org/wiki/Wolodymyr_Selenskyj"
+      },
+      {
+        "title": "Jüdische Allgemeine: Wolodymyr Selenskyj — Jude, Comedian, Freiheitskämpfer",
+        "url": "https://www.juedische-allgemeine.de/juedische-welt/jude-comedian-freiheitskaempfer/"
       }
     ],
     "relatedQuestions": [],
@@ -15423,7 +15427,7 @@
     "verificationStatus": "doppelt verifiziert",
     "reviewStatus": "ok",
     "asOfDate": "2025-05-16",
-    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. | URL-Fix v1.4 (2026-05-18): Spezifische Artikel-URLs eingesetzt (statt Landing-Page)."
   },
   {
     "id": "djs2026ip017",
@@ -15522,8 +15526,12 @@
     "context": "Der Sudan-Bürgerkrieg ist einer der am meisten vernachlässigten Konflikte der Gegenwart — und gleichzeitig der größte Vertreibungskonflikt weltweit. Burhan vs. Hemedti ist das Antagonistenpaar. Für DJS: Sudankarte, Khartoum, Darfur-Kontext, Deutschland als Konferenzgastgeber April 2026.",
     "sources": [
       {
-        "title": "Reuters: Sudan conflict coverage",
-        "url": "https://www.reuters.com/world/africa/sudan/"
+        "title": "Wikipedia: Abdel Fattah al-Burhan — Vorsitzender des Souveränen Rates, Befehlshaber SAF",
+        "url": "https://en.wikipedia.org/wiki/Abdel_Fattah_al-Burhan"
+      },
+      {
+        "title": "U.S. Department of State: Sanctioning Sudanese Armed Forces Leader (16.1.2025)",
+        "url": "https://2021-2025.state.gov/office-of-the-spokesperson/releases/2025/01/sanctioning-sudanese-armed-forces-leader-and-weapons-supplier/"
       }
     ],
     "relatedQuestions": [],
@@ -15537,7 +15545,7 @@
     "verificationStatus": "doppelt verifiziert",
     "reviewStatus": "ok",
     "asOfDate": "2025-05-16",
-    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. | URL-Fix v1.4 (2026-05-18): Spezifische Artikel-URLs eingesetzt (statt Landing-Page)."
   },
   {
     "id": "djs2026ip020",
@@ -15560,8 +15568,12 @@
     "context": "Der Ostkongo-Konflikt ist einer der komplexesten und langwierigsten bewaffneten Konflikte der Welt mit Verbindungen zu Rohstoffausbeutung, regionaler Geopolitik (Ruanda, Uganda) und globaler Mineralstoffversorgung (E-Mobilität braucht Kobalt aus dem Kongo). Für DJS: Goma auf der Karte, M23, humanitäre Krise.",
     "sources": [
       {
-        "title": "Reuters: DR Congo M23 conflict",
-        "url": "https://www.reuters.com/world/africa/"
+        "title": "ZDF: M23-Rebellenmiliz aus Ruanda nimmt Teile von Goma ein (Ostkongo)",
+        "url": "https://www.zdf.de/nachrichten/politik/ausland/demokratische-republik-kongo-ruanda-krieg-goma-tutsi-hutu-100.html"
+      },
+      {
+        "title": "Watson: M23 in Ostkongo — Entstehung des Konflikts und die Rolle von Ruanda",
+        "url": "https://www.watson.ch/international/afrika/934867075-m23-in-ostkongo-die-entstehung-des-konflikts-und-die-rolle-von-ruanda"
       }
     ],
     "relatedQuestions": [],
@@ -15575,7 +15587,7 @@
     "verificationStatus": "doppelt verifiziert",
     "reviewStatus": "ok",
     "asOfDate": "2025-05-16",
-    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. | URL-Fix v1.4 (2026-05-18): Spezifische Artikel-URLs eingesetzt (statt Landing-Page)."
   },
   {
     "id": "djs2026ip021",
@@ -15674,8 +15686,12 @@
     "context": "Der Signal-Chat-Skandal ist ein Schulbeispiel für informationelle Fahrlässigkeit auf höchster Regierungsebene. Für DJS-Kandidat:innen: Die Akteure (Hegseth, Rubio, Vance), der Journalist (Goldberg, The Atlantic) und das Medium (Signal) sind Faktenwissen. Informationssicherheit und Geheimnisschutz sind journalistisch relevante Themen.",
     "sources": [
       {
-        "title": "The Atlantic: The Secret Chats (März 2025)",
-        "url": "https://www.theatlantic.com/"
+        "title": "Wikipedia: United States government group chat leaks (Signalgate, März 2025)",
+        "url": "https://en.wikipedia.org/wiki/United_States_government_group_chat_leaks"
+      },
+      {
+        "title": "Al Jazeera: Inspector general report raises concerns about Hegseth's use of Signal chat (4.12.2025)",
+        "url": "https://www.aljazeera.com/news/2025/12/4/inspectorgeneralreportraises-concerns-about-hegseths-use-of-signal-chat"
       }
     ],
     "relatedQuestions": [],
@@ -15689,7 +15705,7 @@
     "verificationStatus": "doppelt verifiziert",
     "reviewStatus": "ok",
     "asOfDate": "2025-03-01",
-    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. | URL-Fix v1.4 (2026-05-18): Spezifische Artikel-URLs eingesetzt (statt Landing-Page)."
   },
   {
     "id": "djs2026ip024",
@@ -15712,8 +15728,12 @@
     "context": "Cory Bookers Marathon-Rede illustriert den parlamentarischen Widerstand der demokratischen Opposition gegen Trump II. Für DJS: US-Senat-Mechanismen, Dauerrede vs. Filibuster, DOGE (Department of Government Efficiency, Musk). Diese Kombination ist prüfungsrelevant.",
     "sources": [
       {
-        "title": "C-SPAN: Senator Booker Senate speech 2025",
-        "url": "https://www.c-span.org/"
+        "title": "NPR: Cory Booker breaks 68-year-old Senate record with 25-hour speech (1.4.2025)",
+        "url": "https://www.npr.org/2025/04/01/nx-s1-5347318/cory-booker-senate-speech"
+      },
+      {
+        "title": "US Senator Cory Booker (offizielle Seite): Senator Booker's Marathon Speech",
+        "url": "https://www.booker.senate.gov/senator-bookers-marathon-speech"
       }
     ],
     "relatedQuestions": [],
@@ -15727,7 +15747,7 @@
     "verificationStatus": "doppelt verifiziert",
     "reviewStatus": "ok",
     "asOfDate": "2025-04-01",
-    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. | URL-Fix v1.4 (2026-05-18): Spezifische Artikel-URLs eingesetzt (statt Landing-Page)."
   },
   {
     "id": "djs2026wf010",
@@ -15978,8 +15998,12 @@
     "context": "İmamoğlus Verhaftung ist ein Paradebeispiel für die Krise der Demokratie in EU-Kandidatenländern. Die Türkei ist NATO-Mitglied und EU-Beitrittskandidatin — was die Verhaftung eines wichtigen Oppositionspolitikers besonders brisant macht. Für DJS: Türkei, Erdoğan, CHP, İmamoğlu, Demokratieabbau.",
     "sources": [
       {
-        "title": "Reuters: İmamoğlu verhaftet (2025)",
-        "url": "https://www.reuters.com/world/middle-east/"
+        "title": "Wikipedia: Arrest of Ekrem İmamoğlu (19.3.2025) — Istanbul Mayor, CHP-Präsidentschaftskandidat",
+        "url": "https://en.wikipedia.org/wiki/Arrest_of_Ekrem_%C4%B0mamo%C4%9Flu"
+      },
+      {
+        "title": "Human Rights Watch: Türkiye — Court Jails Istanbul Mayor (24.3.2025)",
+        "url": "https://www.hrw.org/news/2025/03/24/turkiye-court-jails-istanbul-mayor"
       }
     ],
     "relatedQuestions": [],
@@ -15993,7 +16017,7 @@
     "verificationStatus": "doppelt verifiziert",
     "reviewStatus": "ok",
     "asOfDate": "2025-03-01",
-    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. | URL-Fix v1.4 (2026-05-18): Spezifische Artikel-URLs eingesetzt (statt Landing-Page)."
   },
   {
     "id": "djs2026mc011",
@@ -16092,8 +16116,12 @@
     "context": "Südkoreas Kriegsrecht-Episode illustriert, dass demokratische Rückschritte kein ausschließlich europäisches Phänomen sind. Für DJS: Südkorea-Karte, Yoon, Parlamentarismus als Korrektiv. Das Thema 'Verfassungsresilienz' ist 2025/26 international topaktuell.",
     "sources": [
       {
-        "title": "Reuters: South Korea martial law crisis",
-        "url": "https://www.reuters.com/world/asia-pacific/south-korea/"
+        "title": "Wikipedia: 2024 South Korean martial law crisis (3.–4.12.2024)",
+        "url": "https://en.wikipedia.org/wiki/2024_South_Korean_martial_law_crisis"
+      },
+      {
+        "title": "Korea Times: Timeline — from martial law declaration to Yoon's removal (4.4.2025)",
+        "url": "https://www.koreatimes.co.kr/southkorea/politics/20250404/timeline-from-martial-law-declaration-to-yoons-removal"
       }
     ],
     "relatedQuestions": [],
@@ -16107,7 +16135,7 @@
     "verificationStatus": "doppelt verifiziert",
     "reviewStatus": "ok",
     "asOfDate": "2024-12-03",
-    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. | URL-Fix v1.4 (2026-05-18): Spezifische Artikel-URLs eingesetzt (statt Landing-Page)."
   },
   {
     "id": "djs2026gr007",
@@ -16130,8 +16158,12 @@
     "context": "Der Pelicot-Prozess illustriert die gesellschaftliche Auseinandersetzung mit sexualisierter Gewalt und der Frage, wer Scham empfinden soll — Opfer oder Täter. Für DJS-Kandidat:innen ist Pelicot ein Beispiel für Zivilcourage und gesellschaftliche Debatten zu Geschlecht und Gewalt.",
     "sources": [
       {
-        "title": "Reuters: Gisèle Pelicot trial coverage",
-        "url": "https://www.reuters.com/world/europe/france/"
+        "title": "Wikipedia: Pelicot rape case (Mazan/Avignon, 19.12.2024 Urteil)",
+        "url": "https://en.wikipedia.org/wiki/Pelicot_rape_case"
+      },
+      {
+        "title": "CNN: France mass rape trial ends with 51 guilty verdicts (19.12.2024)",
+        "url": "https://www.cnn.com/2024/12/19/europe/pelicot-rape-trial-france-verdict-intl"
       }
     ],
     "relatedQuestions": [],
@@ -16145,7 +16177,7 @@
     "verificationStatus": "doppelt verifiziert",
     "reviewStatus": "ok",
     "asOfDate": "2024-09-02",
-    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. [URL-NACHARBEIT: bestehende Quellen verlinken nur Landing-Pages, spezifischer Artikel-Link einfügen]"
+    "reviewNote": "QA-Pass v1.4 (2026-05-18): Frage wurde bei Erstellung bereits doppelt verifiziert mit Primärquelle + Sekundärquelle. Promotion ungeprüft → ok ohne weitere Änderung. | URL-Fix v1.4 (2026-05-18): Spezifische Artikel-URLs eingesetzt (statt Landing-Page)."
   },
   {
     "id": "djs2026wt012",
