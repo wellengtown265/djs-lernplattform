@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint:questions": "node scripts/lint-questions.mjs"
+    "lint:questions": "node scripts/lint-questions.mjs",
+    "sync:beat-notes": "node scripts/sync-beat-notes.mjs"
   },
   "dependencies": {
+    "@netlify/blobs": "^10.7.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-simple-maps": "^3.0.0",

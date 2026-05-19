@@ -11,3 +11,6 @@ fetch_bildertest_images.py
 fetch_images_v2.py
 fetch_images_v3.py
 /tmp/
+
+# Local Netlify folder
+.netlify
