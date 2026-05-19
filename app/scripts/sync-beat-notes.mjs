@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const LIVE_URL = process.env.BEAT_NOTES_URL || 'https://learn-hard-wibe-code.netlify.app/api/notes';
+const LIVE_URL = process.env.BEAT_NOTES_URL || 'https://learn-hard-vibe-code.netlify.app/api/notes';
 const root = path.resolve(process.cwd(), '..');
 const jsonPath = path.join(root, 'BEAT_THE_AI_NOTES.json');
 const mdPath = path.join(root, 'BEAT_THE_AI_NOTES.md');
